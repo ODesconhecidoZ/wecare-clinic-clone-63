@@ -1,7 +1,7 @@
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Heart, Stethoscope, Baby, Pill, Brain, Bone, Activity, Eye, Tooth, Ear } from "lucide-react";
+import { Heart, Stethoscope, Baby, Pill, Brain, Bone, Activity, Eye, FileText, Ear } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -52,7 +52,7 @@ const Services = () => {
       description: "Diagnosis and treatment for ear, nose, and throat conditions. Our ENT department handles issues from common ear infections to complex sinus problems and hearing disorders.",
     },
     {
-      icon: <Tooth className="h-10 w-10" />,
+      icon: <FileText className="h-10 w-10" />,
       title: "Dental Services",
       description: "Complete dental care for the whole family. Our dental services include regular check-ups, cleanings, fillings, root canals, and cosmetic dental procedures.",
     },
