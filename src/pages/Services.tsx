@@ -1,60 +1,60 @@
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Heart, Stethoscope, Baby, Pill, Brain, Bone, Activity, Eye, FileText, Ear } from "lucide-react";
+import { Sparkles, Leaf, Droplets, Zap, Waves, Star, Sun, Heart, Flower, UserCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
     {
-      icon: <Stethoscope className="h-10 w-10" />,
-      title: "General Medicine",
-      description: "Comprehensive care for a wide range of health conditions for patients of all ages. Our general medicine services include routine check-ups, preventive care, and treatment for common illnesses.",
+      icon: <Sparkles className="h-10 w-10" />,
+      title: "Limpeza de Pele",
+      description: "Tratamentos personalizados incluindo hidra clean machine, peeling ultra-sônico e limpeza adequada para cada fotótipo.",
+    },
+    {
+      icon: <Zap className="h-10 w-10" />,
+      title: "Tratamentos Avançados",
+      description: "Hifu, radiofrequência microagulhada e outros tratamentos para lifting facial, flacidez e gordura localizada.",
+    },
+    {
+      icon: <Waves className="h-10 w-10" />,
+      title: "Hidroterapia",
+      description: "Tratamentos corporais com hidrapeeling, banho grego e sauna finlandesa para relaxamento e bem-estar.",
+    },
+    {
+      icon: <Star className="h-10 w-10" />,
+      title: "Rejuvenescimento",
+      description: "Tratamentos para rugas, melasma, acne e revitalização facial com tecnologias avançadas.",
+    },
+    {
+      icon: <Sun className="h-10 w-10" />,
+      title: "Terapias Estéticas",
+      description: "Mesoterapia, nanoterapia e skinbooster para revitalização e rejuvenescimento.",
     },
     {
       icon: <Heart className="h-10 w-10" />,
-      title: "Cardiology",
-      description: "Expert care for heart conditions with advanced diagnostic and treatment options. Our cardiology department offers EKGs, stress tests, echocardiograms, and treatment plans for heart-related conditions.",
+      title: "Massagem Terapêutica",
+      description: "Massagens relaxantes, drenagem linfática e tratamentos corporais vibratórios.",
     },
     {
-      icon: <Baby className="h-10 w-10" />,
-      title: "Pediatrics",
-      description: "Specialized healthcare for infants, children, and adolescents. Our pediatric services include well-child visits, immunizations, developmental assessments, and treatment for childhood illnesses.",
+      icon: <Flower className="h-10 w-10" />,
+      title: "Tratamentos Faciais",
+      description: "Peeling rose de Mer, tratamentos para rosácea, estrias e cicatrizes.",
     },
     {
-      icon: <Pill className="h-10 w-10" />,
-      title: "Pharmacy Services",
-      description: "Convenient access to prescriptions and expert pharmaceutical advice. Our on-site pharmacy provides prescription filling, medication management, and consultation with experienced pharmacists.",
+      icon: <Leaf className="h-10 w-10" />,
+      title: "Terapias Naturais",
+      description: "Ozonoterapia, vapor facial e tratamentos para dermatites com abordagem natural.",
     },
     {
-      icon: <Brain className="h-10 w-10" />,
-      title: "Neurology",
-      description: "Specialized care for conditions affecting the brain, spinal cord, and nervous system. Our neurology department offers diagnostic testing, treatment plans, and ongoing care for neurological disorders.",
+      icon: <Droplets className="h-10 w-10" />,
+      title: "Tratamentos Capilares",
+      description: "Terapias para queda capilar, alopecia e revitalização dos fios.",
     },
     {
-      icon: <Bone className="h-10 w-10" />,
-      title: "Orthopedics",
-      description: "Comprehensive care for bone, joint, and muscle conditions. Our orthopedic services include diagnosis and treatment of sprains, fractures, arthritis, and other musculoskeletal issues.",
-    },
-    {
-      icon: <Activity className="h-10 w-10" />,
-      title: "Preventive Care",
-      description: "Health screenings and wellness services to help prevent diseases. Our preventive care includes regular check-ups, vaccinations, health risk assessments, and lifestyle counseling.",
-    },
-    {
-      icon: <Eye className="h-10 w-10" />,
-      title: "Ophthalmology",
-      description: "Specialized care for eye conditions and vision problems. Our ophthalmology services include vision testing, diagnosis and treatment of eye diseases, and surgical interventions when necessary.",
-    },
-    {
-      icon: <Ear className="h-10 w-10" />,
-      title: "ENT Services",
-      description: "Diagnosis and treatment for ear, nose, and throat conditions. Our ENT department handles issues from common ear infections to complex sinus problems and hearing disorders.",
-    },
-    {
-      icon: <FileText className="h-10 w-10" />,
-      title: "Dental Services",
-      description: "Complete dental care for the whole family. Our dental services include regular check-ups, cleanings, fillings, root canals, and cosmetic dental procedures.",
+      icon: <UserCheck className="h-10 w-10" />,
+      title: "Consulta Personalizada",
+      description: "Avaliação individual e desenvolvimento de plano de tratamento personalizado para suas necessidades.",
     },
   ];
 
@@ -65,8 +65,8 @@ const Services = () => {
       {/* Page Header */}
       <div className="bg-gradient-to-r from-primary/10 to-blue-50 pt-32 pb-10">
         <div className="container-custom">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h1>
-          <p className="text-lg text-gray-600">Comprehensive healthcare services for you and your family.</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h1>
+          <p className="text-lg text-gray-600">Tratamentos estéticos avançados e personalizados para você.</p>
         </div>
       </div>
 
@@ -84,7 +84,7 @@ const Services = () => {
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
                     <p className="text-gray-600 mb-4">{service.description}</p>
                     <Link to="/contact" className="text-primary font-medium hover:text-blue-700 transition-colors flex items-center">
-                      Book Appointment
+                      Agendar Consulta
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
@@ -97,12 +97,12 @@ const Services = () => {
 
           {/* Additional Information */}
           <div className="mt-16 bg-gray-50 p-8 rounded-lg">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Insurance and Payment</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Informações Adicionais</h2>
             <p className="text-gray-600 mb-4">
-              We accept most major insurance plans and offer various payment options to ensure that high-quality healthcare remains accessible to all our patients. Our administrative staff is available to assist you with insurance verification and billing inquiries.
+              Nossa clínica oferece tecnologia de ponta em estética avançada e regenerativa, com profissionais altamente qualificados e ambiente acolhedor para seu bem-estar.
             </p>
             <p className="text-gray-600">
-              For more information about our services, insurance acceptance, or to schedule an appointment, please contact us at 800-555-1234 or email us at info@medicare-clinic.com.
+              Para mais informações sobre nossos serviços ou para agendar uma consulta, entre em contato pelo telefone +351 967319782 ou email cc.clinic2025.ear@gmail.com.
             </p>
           </div>
         </div>
