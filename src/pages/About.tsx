@@ -11,8 +11,8 @@ const About = () => {
       {/* Page Header */}
       <div className="bg-gradient-to-r from-primary/10 to-blue-50 pt-32 pb-10">
         <div className="container-custom">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">About Us</h1>
-          <p className="text-lg text-gray-600">Learn more about MediCare Clinic and our commitment to exceptional healthcare.</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Sobre Nós</h1>
+          <p className="text-lg text-gray-600">Conheça a CC Estética Avançada Regenerativa e nosso compromisso com seu bem-estar.</p>
         </div>
       </div>
 
@@ -23,17 +23,17 @@ const About = () => {
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1631815585553-a8672bf09995?w=800&auto=format&fit=crop&q=80" 
-                alt="MediCare Clinic Team" 
+                alt="CC Estética Avançada Regenerativa" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Story</h2>
+              <h2 className="text-3xl font-semibold text-gray-800 mb-6">Nossa História</h2>
               <p className="text-gray-600 mb-6">
-                Founded in 1998, MediCare Clinic began as a small family practice with a mission to provide personalized, high-quality healthcare services to our community. Over the past 25 years, we've grown to become a comprehensive healthcare center offering a wide range of medical services, but our commitment to patient-centered care remains unchanged.
+                A CC Estética Avançada Regenerativa apresenta-se como um espaço dedicado ao cuidado e bem-estar integrados, assinado por um logotipo que combina as iniciais "CC" em um azul profundo e silhuetas minimalistas de corpo e perfil facial, evocando a união entre estética e regeneração.
               </p>
               <p className="text-gray-600">
-                Our team of experienced healthcare professionals works collaboratively to ensure that every patient receives the attention, care, and respect they deserve. We combine advanced medical technology with compassionate care to deliver exceptional healthcare services that improve the quality of life for our patients.
+                Localizada na Rua Branco Martins, loja 3, 2450-106 Nazaré, nossa clínica convida à descoberta de uma proposta completa de tratamentos, onde cada detalhe — desde a disposição harmoniosa dos móveis até o tom acolhedor das paredes brancas — reflete profissionalismo e conforto.
               </p>
             </div>
           </div>
@@ -41,37 +41,37 @@ const About = () => {
           {/* Mission, Vision, Values */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Nossa Missão</h3>
               <p className="text-gray-600">
-                To provide exceptional, patient-centered healthcare services that improve the quality of life for our patients and contribute to the wellbeing of our community.
+                Proporcionar tratamentos estéticos avançados e regenerativos personalizados que melhoram a qualidade de vida dos nossos clientes e contribuem para o seu bem-estar integral.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Nossa Visão</h3>
               <p className="text-gray-600">
-                To be the most trusted healthcare provider in our community, known for excellence in medical care, innovation, and compassionate service.
+                Ser referência em estética avançada regenerativa, reconhecida pela excelência em tratamentos, inovação tecnológica e serviço personalizado.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Values</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Nossos Valores</h3>
               <p className="text-gray-600">
-                Excellence, Compassion, Integrity, Respect, and Collaboration guide everything we do at MediCare Clinic.
+                Excelência, Personalização, Integridade, Inovação e Bem-estar guiam tudo o que fazemos na CC Estética Avançada Regenerativa.
               </p>
             </div>
           </div>
 
           {/* Why Choose Us */}
           <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Why Choose MediCare Clinic</h2>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Por Que Escolher a CC Estética</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 mt-10">
               <div className="flex">
                 <div className="mr-4 text-primary">
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Experienced Medical Professionals</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Profissionais Especializados</h4>
                   <p className="text-gray-600">
-                    Our team consists of board-certified doctors, nurses, and support staff with years of experience in their respective fields.
+                    Nossa equipe é composta por especialistas com vasta experiência em estética avançada e medicina regenerativa.
                   </p>
                 </div>
               </div>
@@ -81,9 +81,9 @@ const About = () => {
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Comprehensive Healthcare Services</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Tratamentos Personalizados</h4>
                   <p className="text-gray-600">
-                    From preventive care to specialized treatments, we offer a wide range of medical services to meet all your healthcare needs.
+                    Cada cliente recebe um plano de tratamento exclusivo, adaptado às suas necessidades específicas e objetivos estéticos.
                   </p>
                 </div>
               </div>
@@ -93,9 +93,9 @@ const About = () => {
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Patient-Centered Approach</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Tecnologia de Ponta</h4>
                   <p className="text-gray-600">
-                    We believe in involving patients in their care decisions and developing personalized treatment plans.
+                    Utilizamos equipamentos avançados e inovadores para garantir resultados eficazes e duradouros.
                   </p>
                 </div>
               </div>
@@ -105,9 +105,9 @@ const About = () => {
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Modern Facilities</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Ambiente Acolhedor</h4>
                   <p className="text-gray-600">
-                    Our clinic is equipped with state-of-the-art medical technology to ensure accurate diagnosis and effective treatments.
+                    Nossa clínica foi projetada para proporcionar conforto e bem-estar durante todos os procedimentos.
                   </p>
                 </div>
               </div>
@@ -117,9 +117,9 @@ const About = () => {
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Convenient Scheduling</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Abordagem Integrativa</h4>
                   <p className="text-gray-600">
-                    We offer flexible appointment times, online booking, and minimal wait times to respect your schedule.
+                    Combinamos diferentes técnicas e tecnologias para oferecer resultados superiores em bem-estar e beleza.
                   </p>
                 </div>
               </div>
@@ -129,9 +129,9 @@ const About = () => {
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-medium text-gray-800 mb-2">Compassionate Care</h4>
+                  <h4 className="text-xl font-medium text-gray-800 mb-2">Compromisso com Resultados</h4>
                   <p className="text-gray-600">
-                    We treat each patient with dignity, respect, and empathy, ensuring a positive healthcare experience.
+                    Nossa maior satisfação é ver a transformação e felicidade dos nossos clientes após nossos tratamentos.
                   </p>
                 </div>
               </div>

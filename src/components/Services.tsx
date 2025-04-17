@@ -1,55 +1,55 @@
 
 import { Link } from "react-router-dom";
-import { Heart, Stethoscope, Baby, Pill, Brain, Bone, Activity, Eye } from "lucide-react";
+import { Heart, Sparkles, Baby, Zap, Waves, Sun, Activity, Droplets, Leaf, Flower } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: <Stethoscope className="h-10 w-10" />,
-      title: "General Medicine",
-      description: "Comprehensive care for a wide range of health conditions for patients of all ages.",
+      icon: <Sparkles className="h-10 w-10" />,
+      title: "Limpeza de Pele",
+      description: "Tratamentos personalizados incluindo hidra clean machine, peeling ultra-sônico e limpeza adequada para cada fotótipo.",
       link: "/services"
     },
     {
-      icon: <Heart className="h-10 w-10" />,
-      title: "Cardiology",
-      description: "Expert care for heart conditions with advanced diagnostic and treatment options.",
+      icon: <Zap className="h-10 w-10" />,
+      title: "Tratamentos Avançados",
+      description: "Hifu, radiofrequência microagulhada e outros tratamentos para lifting facial, flacidez e gordura localizada.",
       link: "/services"
     },
     {
-      icon: <Baby className="h-10 w-10" />,
-      title: "Pediatrics",
-      description: "Specialized healthcare for infants, children, and adolescents.",
+      icon: <Waves className="h-10 w-10" />,
+      title: "Hidroterapia",
+      description: "Tratamentos corporais com hidrapeeling, banho grego e sauna finlandesa para relaxamento e bem-estar.",
       link: "/services"
     },
     {
-      icon: <Pill className="h-10 w-10" />,
-      title: "Pharmacy Services",
-      description: "Convenient access to prescriptions and expert pharmaceutical advice.",
-      link: "/services"
-    },
-    {
-      icon: <Brain className="h-10 w-10" />,
-      title: "Neurology",
-      description: "Specialized care for conditions affecting the brain, spinal cord, and nervous system.",
-      link: "/services"
-    },
-    {
-      icon: <Bone className="h-10 w-10" />,
-      title: "Orthopedics",
-      description: "Comprehensive care for bone, joint, and muscle conditions.",
+      icon: <Sun className="h-10 w-10" />,
+      title: "Rejuvenescimento",
+      description: "Tratamentos para rugas, melasma, acne e revitalização facial com tecnologias avançadas.",
       link: "/services"
     },
     {
       icon: <Activity className="h-10 w-10" />,
-      title: "Preventive Care",
-      description: "Health screenings and wellness services to help prevent diseases.",
+      title: "Terapias Estéticas",
+      description: "Mesoterapia, nanoterapia e skinbooster para revitalização e rejuvenescimento.",
       link: "/services"
     },
     {
-      icon: <Eye className="h-10 w-10" />,
-      title: "Ophthalmology",
-      description: "Specialized care for eye conditions and vision problems.",
+      icon: <Heart className="h-10 w-10" />,
+      title: "Massagem Terapêutica",
+      description: "Massagens relaxantes, drenagem linfática e tratamentos corporais vibratórios.",
+      link: "/services"
+    },
+    {
+      icon: <Flower className="h-10 w-10" />,
+      title: "Tratamentos Faciais",
+      description: "Peeling rose de Mer, tratamentos para rosácea, estrias e cicatrizes.",
+      link: "/services"
+    },
+    {
+      icon: <Leaf className="h-10 w-10" />,
+      title: "Terapias Naturais",
+      description: "Ozonoterapia, vapor facial e tratamentos para dermatites com abordagem natural.",
       link: "/services"
     }
   ];
@@ -58,9 +58,9 @@ const Services = () => {
     <section className="section-padding bg-gray-50" id="services">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Our Medical Services</h2>
+          <h2 className="section-title">Nossos Serviços Estéticos</h2>
           <p className="section-subtitle">
-            We offer a wide range of medical services to meet all your healthcare needs under one roof.
+            Oferecemos uma ampla gama de tratamentos estéticos avançados e regenerativos para atender todas as suas necessidades.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const Services = () => {
                 to={service.link}
                 className="text-primary font-medium flex items-center hover:text-blue-700 transition-colors"
               >
-                Learn More
+                Saiba Mais
                 <svg
                   className="w-4 h-4 ml-1"
                   fill="none"
@@ -99,7 +99,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Link to="/services" className="btn-primary inline-flex items-center">
-            View All Services
+            Ver Todos os Serviços
             <svg
               className="w-4 h-4 ml-2"
               fill="none"

@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Here you would typically send the form data to your backend
-    alert("Thank you for your message. We will contact you shortly!");
+    alert("Obrigado pela sua mensagem. Entraremos em contato em breve!");
     setFormData({
       name: "",
       email: "",
@@ -34,9 +34,9 @@ const Contact = () => {
     <section className="section-padding bg-white" id="contact">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Contact Us</h2>
+          <h2 className="section-title">Entre em Contato</h2>
           <p className="section-subtitle">
-            Have questions or need to schedule an appointment? Reach out to us using any of the methods below.
+            Tem perguntas ou deseja agendar uma consulta? Entre em contato por qualquer um dos métodos abaixo.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="lg:col-span-1">
             <div className="bg-gray-50 p-8 rounded-xl h-full">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Informações de Contato</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -52,10 +52,10 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Location</h4>
-                    <p className="text-gray-600">123 Healthcare Avenue</p>
-                    <p className="text-gray-600">Medical District</p>
-                    <p className="text-gray-600">New York, NY 10001</p>
+                    <h4 className="text-lg font-medium text-gray-800 mb-1">Localização</h4>
+                    <p className="text-gray-600">Rua Branco Martins, loja 3</p>
+                    <p className="text-gray-600">2450-106 Nazaré</p>
+                    <p className="text-gray-600">Portugal</p>
                   </div>
                 </div>
                 
@@ -64,9 +64,8 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Phone</h4>
-                    <p className="text-gray-600">800-555-1234 (Main)</p>
-                    <p className="text-gray-600">800-555-1235 (Emergency)</p>
+                    <h4 className="text-lg font-medium text-gray-800 mb-1">Telefone</h4>
+                    <p className="text-gray-600">+351 967 319 782</p>
                   </div>
                 </div>
                 
@@ -76,8 +75,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-800 mb-1">Email</h4>
-                    <p className="text-gray-600">info@medicare-clinic.com</p>
-                    <p className="text-gray-600">appointments@medicare-clinic.com</p>
+                    <p className="text-gray-600">cc.clinic2025.ear@gmail.com</p>
                   </div>
                 </div>
                 
@@ -86,10 +84,10 @@ const Contact = () => {
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 8:00 AM - 8:00 PM</p>
-                    <p className="text-gray-600">Saturday: 8:00 AM - 5:00 PM</p>
-                    <p className="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                    <h4 className="text-lg font-medium text-gray-800 mb-1">Horário</h4>
+                    <p className="text-gray-600">Segunda - Sexta: 9:00 - 19:00</p>
+                    <p className="text-gray-600">Sábado: 9:00 - 17:00</p>
+                    <p className="text-gray-600">Domingo: Fechado</p>
                   </div>
                 </div>
               </div>
@@ -99,13 +97,13 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Envie-nos uma Mensagem</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                      Your Name*
+                      Seu Nome*
                     </label>
                     <input
                       type="text"
@@ -115,13 +113,13 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      placeholder="Enter your name"
+                      placeholder="Digite seu nome"
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                      Your Email*
+                      Seu Email*
                     </label>
                     <input
                       type="email"
@@ -131,7 +129,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      placeholder="Enter your email"
+                      placeholder="Digite seu email"
                     />
                   </div>
                 </div>
@@ -139,7 +137,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                      Phone Number
+                      Telefone
                     </label>
                     <input
                       type="tel"
@@ -148,13 +146,13 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                      placeholder="Enter your phone number"
+                      placeholder="Digite seu número de telefone"
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="service" className="block text-gray-700 font-medium mb-2">
-                      Service of Interest
+                      Serviço de Interesse
                     </label>
                     <select
                       id="service"
@@ -163,20 +161,20 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                     >
-                      <option value="">Select a service</option>
-                      <option value="General Medicine">General Medicine</option>
-                      <option value="Cardiology">Cardiology</option>
-                      <option value="Pediatrics">Pediatrics</option>
-                      <option value="Neurology">Neurology</option>
-                      <option value="Orthopedics">Orthopedics</option>
-                      <option value="Other">Other</option>
+                      <option value="">Selecione um serviço</option>
+                      <option value="Tratamentos Faciais">Tratamentos Faciais</option>
+                      <option value="Tratamentos Corporais">Tratamentos Corporais</option>
+                      <option value="Terapias Capilares">Terapias Capilares</option>
+                      <option value="Massagem Terapêutica">Massagem Terapêutica</option>
+                      <option value="Terapias Estéticas">Terapias Estéticas</option>
+                      <option value="Outro">Outro</option>
                     </select>
                   </div>
                 </div>
                 
                 <div>
                   <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                    Your Message*
+                    Sua Mensagem*
                   </label>
                   <textarea
                     id="message"
@@ -186,7 +184,7 @@ const Contact = () => {
                     required
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                    placeholder="How can we help you?"
+                    placeholder="Como podemos ajudar você?"
                   ></textarea>
                 </div>
                 
@@ -195,7 +193,7 @@ const Contact = () => {
                     type="submit"
                     className="btn-primary inline-flex items-center"
                   >
-                    Send Message
+                    Enviar Mensagem
                     <Send className="ml-2 h-5 w-5" />
                   </button>
                 </div>

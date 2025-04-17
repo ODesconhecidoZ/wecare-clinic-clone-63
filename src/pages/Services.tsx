@@ -14,7 +14,7 @@ const Services = () => {
     {
       icon: <Zap className="h-10 w-10" />,
       title: "Tratamentos Avançados",
-      description: "Hifu, radiofrequência microagulhada e outros tratamentos para lifting facial, flacidez e gordura localizada.",
+      description: "Hifu, radiofrequência microagulhada (Morpheus) para lifting facial, flacidez e gordura localizada.",
     },
     {
       icon: <Waves className="h-10 w-10" />,
@@ -29,7 +29,7 @@ const Services = () => {
     {
       icon: <Sun className="h-10 w-10" />,
       title: "Terapias Estéticas",
-      description: "Mesoterapia, nanoterapia e skinbooster para revitalização e rejuvenescimento.",
+      description: "Mesoterapia, nanoterapia e skinbooster para revitalização e rejuvenescimento cutâneo.",
     },
     {
       icon: <Heart className="h-10 w-10" />,
@@ -39,7 +39,7 @@ const Services = () => {
     {
       icon: <Flower className="h-10 w-10" />,
       title: "Tratamentos Faciais",
-      description: "Peeling rose de Mer, tratamentos para rosácea, estrias e cicatrizes.",
+      description: "Peeling Rose de Mer, tratamentos para rosácea, estrias e cicatrizes.",
     },
     {
       icon: <Leaf className="h-10 w-10" />,
@@ -49,7 +49,7 @@ const Services = () => {
     {
       icon: <Droplets className="h-10 w-10" />,
       title: "Tratamentos Capilares",
-      description: "Terapias para queda capilar, alopecia e revitalização dos fios.",
+      description: "Head spa, terapias para queda capilar, alopecia e revitalização dos fios.",
     },
     {
       icon: <UserCheck className="h-10 w-10" />,

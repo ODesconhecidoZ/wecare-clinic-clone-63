@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">MediCare Clinic</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">CC Estética Avançada Regenerativa</h3>
             <p className="text-gray-300 mb-4">
-              Providing quality healthcare services for the entire family. Your health is our priority.
+              Cuidado e bem-estar integrados com tratamentos estéticos avançados e regenerativos para realçar sua beleza natural.
             </p>
             <div className="flex space-x-3">
               <a href="#" className="bg-primary/20 hover:bg-primary/30 text-primary hover:text-white p-2 rounded-full transition-colors">
@@ -31,31 +31,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Home
+                  <ArrowRight className="h-4 w-4 mr-2" /> Início
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> About Us
+                  <ArrowRight className="h-4 w-4 mr-2" /> Sobre Nós
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Our Services
+                  <ArrowRight className="h-4 w-4 mr-2" /> Nossos Serviços
                 </Link>
               </li>
               <li>
                 <Link to="/doctors" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Our Doctors
+                  <ArrowRight className="h-4 w-4 mr-2" /> Nossa Equipe
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Contact Us
+                  <ArrowRight className="h-4 w-4 mr-2" /> Contato
                 </Link>
               </li>
             </ul>
@@ -63,31 +63,31 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Our Services</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Nossos Serviços</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> General Medicine
+                  <ArrowRight className="h-4 w-4 mr-2" /> Tratamentos Faciais
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Cardiology
+                  <ArrowRight className="h-4 w-4 mr-2" /> Tratamentos Corporais
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Pediatrics
+                  <ArrowRight className="h-4 w-4 mr-2" /> Terapias Estéticas
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Neurology
+                  <ArrowRight className="h-4 w-4 mr-2" /> Terapias Capilares
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary transition-colors flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2" /> Orthopedics
+                  <ArrowRight className="h-4 w-4 mr-2" /> Massagem Terapêutica
                 </Link>
               </li>
             </ul>
@@ -95,23 +95,23 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Informações de Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 Healthcare Avenue, Medical District, New York, NY 10001</span>
+                <span className="text-gray-300">Rua Branco Martins, loja 3, 2450-106 Nazaré</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <span className="text-gray-300">800-555-1234</span>
+                <span className="text-gray-300">+351 967 319 782</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <span className="text-gray-300">info@medicare-clinic.com</span>
+                <span className="text-gray-300">cc.clinic2025.ear@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">Mon-Fri: 8:00 AM - 8:00 PM<br />Sat: 8:00 AM - 5:00 PM<br />Sun: 10:00 AM - 4:00 PM</span>
+                <span className="text-gray-300">Seg-Sex: 9:00 - 19:00<br />Sáb: 9:00 - 17:00<br />Dom: Fechado</span>
               </li>
             </ul>
           </div>
@@ -121,12 +121,12 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} MediCare Clinic. All rights reserved.
+            &copy; {new Date().getFullYear()} CC Estética Avançada Regenerativa. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-primary text-sm">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-primary text-sm">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-primary text-sm">Sitemap</a>
+            <a href="#" className="text-gray-400 hover:text-primary text-sm">Política de Privacidade</a>
+            <a href="#" className="text-gray-400 hover:text-primary text-sm">Termos de Serviço</a>
+            <a href="#" className="text-gray-400 hover:text-primary text-sm">Mapa do Site</a>
           </div>
         </div>
       </div>

@@ -14,26 +14,26 @@ const Hero = () => {
         {/* Content */}
         <div className="w-full lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800 mb-6">
-            Your Health Is Our <span className="text-primary">Priority</span>
+            Beleza e <span className="text-primary">Bem-estar</span> Integrados
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
-            Experience exceptional care with our dedicated team of medical professionals. We're committed to providing personalized healthcare services for you and your family.
+            Descubra tratamentos estéticos avançados e regenerativos personalizados para realçar sua beleza natural e promover seu bem-estar completo.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             <Link to="/contact" className="btn-primary flex items-center">
-              Book Appointment <ArrowRight className="ml-2 h-5 w-5" />
+              Agendar Consulta <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <a href="tel:8005551234" className="py-3 px-6 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center">
+            <a href="tel:+351967319782" className="py-3 px-6 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center">
               <Phone className="mr-2 h-5 w-5 text-primary" /> 
-              Call Now
+              Ligar Agora
             </a>
           </div>
         </div>
         
-        {/* Image or Feature Box */}
+        {/* Feature Box */}
         <div className="w-full lg:w-1/2 lg:pl-10">
           <div className="bg-white rounded-xl shadow-xl p-8">
-            <h3 className="text-2xl font-semibold mb-6 text-gray-800">Quick Information</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">Informações Rápidas</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
@@ -41,10 +41,10 @@ const Hero = () => {
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-gray-800 mb-1">Working Hours</h4>
-                  <p className="text-gray-600">Monday - Friday: 8:00 AM - 8:00 PM</p>
-                  <p className="text-gray-600">Saturday: 8:00 AM - 5:00 PM</p>
-                  <p className="text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                  <h4 className="text-lg font-medium text-gray-800 mb-1">Horário de Funcionamento</h4>
+                  <p className="text-gray-600">Segunda - Sexta: 9:00 - 19:00</p>
+                  <p className="text-gray-600">Sábado: 9:00 - 17:00</p>
+                  <p className="text-gray-600">Domingo: Fechado</p>
                 </div>
               </div>
               
@@ -53,9 +53,9 @@ const Hero = () => {
                   <Calendar className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-gray-800 mb-1">Appointments</h4>
-                  <p className="text-gray-600">Book online or call us at 800-555-1234</p>
-                  <p className="text-gray-600">Emergency services available 24/7</p>
+                  <h4 className="text-lg font-medium text-gray-800 mb-1">Agendamentos</h4>
+                  <p className="text-gray-600">Agende online ou ligue: +351 967 319 782</p>
+                  <p className="text-gray-600">Atendimento personalizado para cada cliente</p>
                 </div>
               </div>
               
@@ -64,9 +64,9 @@ const Hero = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-gray-800 mb-1">Contact</h4>
-                  <p className="text-gray-600">Phone: 800-555-1234</p>
-                  <p className="text-gray-600">Email: info@medicare-clinic.com</p>
+                  <h4 className="text-lg font-medium text-gray-800 mb-1">Contato</h4>
+                  <p className="text-gray-600">Telefone: +351 967 319 782</p>
+                  <p className="text-gray-600">Email: cc.clinic2025.ear@gmail.com</p>
                 </div>
               </div>
             </div>
