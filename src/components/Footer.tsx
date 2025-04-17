@@ -4,12 +4,12 @@ import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white pt-16 pb-6">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container-custom text-center"> {/* Adicionado text-center */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center"> {/* Adicionado text-center */}
           {/* About */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">CC Estética Avançada Regenerativa</h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 max-w-md mx-auto"> {/* Adicionado max-w-md e mx-auto */}
               Tecnologia e bem-estar para corpo, rosto e cabelo. Tratamentos personalizados com resultados reais e duradouros.
             </p>
           </div>
@@ -17,12 +17,12 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Localização</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center"> {/* Adicionado items-center */}
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">Rua Branco Martins, Loja 3, 2450-106 Nazaré</span>
               </li>
-              <li className="flex items-start mt-4">
+              <li className="mt-4 text-center"> {/* Adicionado text-center */}
                 <div className="text-gray-300">
                   <h4 className="font-medium mb-1">Horário de Funcionamento:</h4>
                   <p>Segunda a Sexta: 09h–19h</p>
