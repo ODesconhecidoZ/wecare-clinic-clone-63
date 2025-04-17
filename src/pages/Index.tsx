@@ -8,11 +8,10 @@ import BookingInfo from "../components/BookingInfo";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen text-center"> {/* Adicionado text-center */}
+    <div className="min-h-screen text-center">
       <Navbar />
       <Hero />
       <ClinicInfo />
@@ -22,7 +21,6 @@ const Index = () => {
       <Contact />
       <Testimonials />
       <FAQ />
-      <Footer />
     </div>
   );
 };

@@ -72,7 +72,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-open-sans;
+    @apply bg-background text-foreground font-open-sans text-lg;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-poppins font-medium;
@@ -84,15 +84,15 @@
     @apply container mx-auto px-4 md:px-6;
   }
   .btn-primary {
-    @apply bg-primary text-white py-3 px-6 rounded-md hover:bg-blue-600 transition-colors;
+    @apply bg-primary text-white py-3 px-6 rounded-md hover:bg-blue-600 transition-colors text-lg;
   }
   .section-padding {
     @apply py-16 md:py-24;
   }
   .section-title {
-    @apply text-3xl md:text-4xl font-semibold mb-3 text-gray-800;
+    @apply text-4xl md:text-5xl font-semibold mb-3 text-gray-800;
   }
   .section-subtitle {
-    @apply text-lg text-gray-600 mb-10 max-w-2xl mx-auto;
+    @apply text-xl text-gray-600 mb-10 max-w-2xl mx-auto;
   }
 }
