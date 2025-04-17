@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <div className="text-primary font-bold text-2xl font-poppins">
-            MediCare<span className="text-gray-700">Clinic</span>
+            CC Estética<span className="text-gray-700"> Avançada Regenerativa</span>
           </div>
         </Link>
 

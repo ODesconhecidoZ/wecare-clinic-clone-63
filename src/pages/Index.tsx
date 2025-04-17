@@ -8,6 +8,7 @@ import BookingInfo from "../components/BookingInfo";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
+import EmailCTA from "../components/EmailCTA";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <Contact />
       <Testimonials />
       <FAQ />
+      <EmailCTA />
     </div>
   );
 };
