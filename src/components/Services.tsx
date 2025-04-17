@@ -1,55 +1,40 @@
 
 import { Link } from "react-router-dom";
-import { Heart, Sparkles, Baby, Zap, Waves, Sun, Activity, Droplets, Leaf, Flower } from "lucide-react";
+import { 
+  Heart, Sparkles, Flower, Zap, Waves, 
+  Leaf, Activity, Droplets, ArrowRight 
+} from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: <Sparkles className="h-10 w-10" />,
-      title: "Limpeza de Pele",
-      description: "Tratamentos personalizados incluindo hidra clean machine, peeling ultra-sônico e limpeza adequada para cada fotótipo.",
+      title: "Tratamentos Faciais",
+      description: "Hidra-clean, peeling ultrassônico, alta frequência, ozonoterapia, hidrapeeling.",
       link: "/services"
     },
     {
       icon: <Zap className="h-10 w-10" />,
-      title: "Tratamentos Avançados",
-      description: "Hifu, radiofrequência microagulhada e outros tratamentos para lifting facial, flacidez e gordura localizada.",
+      title: "Tratamentos Corporais",
+      description: "HIFU Ultraformer, radiofrequência Morpheus, sauna finlandesa, banho grego, massagem vibratória, drenagem linfática.",
       link: "/services"
     },
     {
-      icon: <Waves className="h-10 w-10" />,
-      title: "Hidroterapia",
-      description: "Tratamentos corporais com hidrapeeling, banho grego e sauna finlandesa para relaxamento e bem-estar.",
-      link: "/services"
-    },
-    {
-      icon: <Sun className="h-10 w-10" />,
-      title: "Rejuvenescimento",
-      description: "Tratamentos para rugas, melasma, acne e revitalização facial com tecnologias avançadas.",
+      icon: <Droplets className="h-10 w-10" />,
+      title: "Terapias Capilares",
+      description: "Intradermoterapia, mesoterapia/nanoterapia, derma pen, head spa, queda capilar e estímulo ao crescimento.",
       link: "/services"
     },
     {
       icon: <Activity className="h-10 w-10" />,
-      title: "Terapias Estéticas",
-      description: "Mesoterapia, nanoterapia e skinbooster para revitalização e rejuvenescimento.",
-      link: "/services"
-    },
-    {
-      icon: <Heart className="h-10 w-10" />,
-      title: "Massagem Terapêutica",
-      description: "Massagens relaxantes, drenagem linfática e tratamentos corporais vibratórios.",
-      link: "/services"
-    },
-    {
-      icon: <Flower className="h-10 w-10" />,
-      title: "Tratamentos Faciais",
-      description: "Peeling rose de Mer, tratamentos para rosácea, estrias e cicatrizes.",
+      title: "Tecnologias Regenerativas",
+      description: "Hialuron Pen, skinbooster/swettbotox, máscara LED, Dermalife 5.5.",
       link: "/services"
     },
     {
       icon: <Leaf className="h-10 w-10" />,
-      title: "Terapias Naturais",
-      description: "Ozonoterapia, vapor facial e tratamentos para dermatites com abordagem natural.",
+      title: "Programas Especiais",
+      description: "Detox, vapor facial, tratamentos para dermatites, bronquite, asma e alergias.",
       link: "/services"
     }
   ];
@@ -58,13 +43,13 @@ const Services = () => {
     <section className="section-padding bg-gray-50" id="services">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Nossos Serviços Estéticos</h2>
+          <h2 className="section-title">Nossos Serviços</h2>
           <p className="section-subtitle">
             Oferecemos uma ampla gama de tratamentos estéticos avançados e regenerativos para atender todas as suas necessidades.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -78,43 +63,22 @@ const Services = () => {
                 className="text-primary font-medium flex items-center hover:text-blue-700 transition-colors"
               >
                 Saiba Mais
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/services" className="btn-primary inline-flex items-center">
-            Ver Todos os Serviços
-            <svg
-              className="w-4 h-4 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
+          <a 
+            href="https://wa.me/351967319782" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center"
+          >
+            Quero agendar pelo WhatsApp
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
         </div>
       </div>
     </section>
