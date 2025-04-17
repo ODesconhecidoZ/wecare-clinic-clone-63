@@ -1,4 +1,6 @@
 
+import { ArrowRight } from "lucide-react";
+
 const ClinicInfo = () => {
   return (
     <section className="py-16 bg-gray-50" id="about">
