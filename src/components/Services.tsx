@@ -1,39 +1,107 @@
 
 import { 
-  Sparkles, Zap, Droplets, Activity, Leaf, ArrowRight 
+  Sparkles, Zap, Droplets, Activity, Leaf, ArrowRight,
+  Scan, Brain, PenLine, Scissors, Flame
 } from "lucide-react";
+import { 
+  Tabs, 
+  TabsContent, 
+  TabsList, 
+  TabsTrigger 
+} from "@/components/ui/tabs";
 
 const Services = () => {
-  const services = [
+  const serviceCategories = [
     {
-      icon: <Sparkles className="h-10 w-10" />,
-      title: "Tratamentos Faciais",
-      description: "Hidra-clean, peeling ultrassônico, alta frequência, ozonoterapia, hidrapeeling.",
-      link: "#services"
+      id: "facial",
+      name: "Faciais",
+      icon: <Sparkles className="h-6 w-6" />,
+      services: [
+        "Hidra-clean",
+        "Peeling ultrassônico",
+        "Alta frequência",
+        "Ozonoterapia",
+        "Hidrapeeling",
+        "Vapor facial"
+      ]
     },
     {
-      icon: <Zap className="h-10 w-10" />,
-      title: "Tratamentos Corporais",
-      description: "HIFU Ultraformer, radiofrequência Morpheus, sauna finlandesa, banho grego, massagem vibratória, drenagem linfática.",
-      link: "#services"
+      id: "body",
+      name: "Corporais",
+      icon: <Zap className="h-6 w-6" />,
+      services: [
+        "HIFU Ultraformer",
+        "Radiofrequência Morpheus",
+        "Sauna finlandesa",
+        "Banho grego",
+        "Massagem vibratória",
+        "Drenagem linfática"
+      ]
     },
     {
-      icon: <Droplets className="h-10 w-10" />,
-      title: "Terapias Capilares",
-      description: "Intradermoterapia, mesoterapia/nanoterapia, derma pen, head spa, queda capilar e estímulo ao crescimento.",
-      link: "#services"
+      id: "hair",
+      name: "Capilares",
+      icon: <Droplets className="h-6 w-6" />,
+      services: [
+        "Intradermoterapia",
+        "Mesoterapia/nanoterapia",
+        "Derma pen",
+        "Head spa",
+        "Tratamento para queda capilar",
+        "Estímulo ao crescimento"
+      ]
     },
     {
-      icon: <Activity className="h-10 w-10" />,
-      title: "Tecnologias Regenerativas",
-      description: "Hialuron Pen, skinbooster/swettbotox, máscara LED, Dermalife 5.5.",
-      link: "#services"
+      id: "regen",
+      name: "Regenerativos",
+      icon: <Activity className="h-6 w-6" />,
+      services: [
+        "Hialuron Pen",
+        "Skinbooster/Swettbotox",
+        "Máscara LED",
+        "Dermalife 5.5",
+        "Laser facial regenerativo",
+        "Microagulhamento"
+      ]
     },
     {
-      icon: <Leaf className="h-10 w-10" />,
-      title: "Programas Especiais",
-      description: "Detox, vapor facial, tratamentos para dermatites, bronquite, asma e alergias.",
-      link: "#services"
+      id: "special",
+      name: "Especiais",
+      icon: <Leaf className="h-6 w-6" />,
+      services: [
+        "Detox",
+        "Tratamentos para dermatites",
+        "Tratamentos para bronquite",
+        "Tratamentos para asma",
+        "Tratamentos para alergias",
+        "Programas personalizados"
+      ]
+    },
+    {
+      id: "aesthetic",
+      name: "Estéticos",
+      icon: <Scissors className="h-6 w-6" />,
+      services: [
+        "Massagens modeladoras",
+        "Tratamentos para celulite",
+        "Tratamentos para flacidez",
+        "Limpeza de pele profunda",
+        "Peeling químico",
+        "Tratamentos anti-idade"
+      ]
+    },
+    {
+      id: "diagnostic",
+      name: "Diagnósticos",
+      icon: <Scan className="h-6 w-6" />,
+      services: [
+        "Análise facial",
+        "Diagnóstico capilar",
+        "Avaliação corporal",
+        "Testes de sensibilidade",
+        "Análise de pele",
+        "Consultoria personalizada"
+      ]
     }
   ];
 
@@ -42,30 +110,46 @@ const Services = () => {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">Nossos Serviços</h2>
-          <p className="section-subtitle">
-            Oferecemos uma ampla gama de tratamentos estéticos avançados e regenerativos para atender todas as suas necessidades.
+          <p className="section-subtitle max-w-3xl mx-auto">
+            Oferecemos uma ampla gama de tratamentos estéticos avançados e regenerativos para atender todas as suas necessidades, categorizados para facilitar a sua escolha.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-full"
-            >
-              <div className="text-primary mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800 text-center">{service.title}</h3>
-              <p className="text-gray-600 flex-grow mb-4 text-center">{service.description}</p>
-              <a
-                href={service.link}
-                className="text-primary font-medium flex items-center justify-center hover:text-blue-700 transition-colors"
+        <Tabs defaultValue="facial" className="max-w-5xl mx-auto">
+          <TabsList className="flex flex-wrap justify-center mb-8 bg-transparent h-auto gap-2">
+            {serviceCategories.map((category) => (
+              <TabsTrigger 
+                key={category.id} 
+                value={category.id}
+                className="flex items-center gap-2 px-4 py-3 rounded-full data-[state=active]:bg-primary data-[state=active]:text-white"
               >
-                Saiba Mais
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </a>
-            </div>
+                {category.icon}
+                <span>{category.name}</span>
+              </TabsTrigger>
+            ))}
+          </TabsList>
+          
+          {serviceCategories.map((category) => (
+            <TabsContent key={category.id} value={category.id} className="animate-in fade-in-50 duration-300">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    {category.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold ml-3 text-gray-800">Tratamentos {category.name}</h3>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {category.services.map((service, idx) => (
+                    <div key={idx} className="bg-gray-50 p-4 rounded-lg hover:bg-primary/5 transition-colors">
+                      <p className="text-center font-medium text-gray-700">{service}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </TabsContent>
           ))}
-        </div>
+        </Tabs>
 
         <div className="text-center mt-12">
           <a 

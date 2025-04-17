@@ -4,7 +4,6 @@ import Hero from "../components/Hero";
 import ClinicInfo from "../components/ClinicInfo";
 import Services from "../components/Services";
 import About from "../components/About";
-import Doctors from "../components/Doctors";
 import BookingInfo from "../components/BookingInfo";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
@@ -19,7 +18,6 @@ const Index = () => {
       <ClinicInfo />
       <About />
       <Services />
-      <Doctors />
       <BookingInfo />
       <Contact />
       <Testimonials />
