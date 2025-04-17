@@ -12,14 +12,13 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
-          {/* Contact Info */}
-          <div className="lg:col-span-1">
-            <div className="bg-gray-50 p-8 rounded-xl h-full">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Informações de Contato</h3>
-              
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Informações de Contato</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <div className="flex items-start">
+                <div className="flex items-start justify-center">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
@@ -31,7 +30,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                <div className="flex items-start justify-center">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
@@ -40,8 +39,10 @@ const Contact = () => {
                     <p className="text-gray-600">+351 967 319 782</p>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start justify-center">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
@@ -51,7 +52,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                <div className="flex items-start justify-center">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4">
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
@@ -63,6 +64,18 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            
+            <div className="text-center mt-10">
+              <a 
+                href="https://wa.me/351967319782" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center"
+              >
+                Entrar em Contato pelo WhatsApp
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>

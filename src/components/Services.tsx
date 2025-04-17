@@ -1,8 +1,6 @@
 
-import { Link } from "react-router-dom";
 import { 
-  Heart, Sparkles, Flower, Zap, Waves, 
-  Leaf, Activity, Droplets, ArrowRight 
+  Sparkles, Zap, Droplets, Activity, Leaf, ArrowRight 
 } from "lucide-react";
 
 const Services = () => {
@@ -11,31 +9,31 @@ const Services = () => {
       icon: <Sparkles className="h-10 w-10" />,
       title: "Tratamentos Faciais",
       description: "Hidra-clean, peeling ultrassônico, alta frequência, ozonoterapia, hidrapeeling.",
-      link: "/services"
+      link: "#services"
     },
     {
       icon: <Zap className="h-10 w-10" />,
       title: "Tratamentos Corporais",
       description: "HIFU Ultraformer, radiofrequência Morpheus, sauna finlandesa, banho grego, massagem vibratória, drenagem linfática.",
-      link: "/services"
+      link: "#services"
     },
     {
       icon: <Droplets className="h-10 w-10" />,
       title: "Terapias Capilares",
       description: "Intradermoterapia, mesoterapia/nanoterapia, derma pen, head spa, queda capilar e estímulo ao crescimento.",
-      link: "/services"
+      link: "#services"
     },
     {
       icon: <Activity className="h-10 w-10" />,
       title: "Tecnologias Regenerativas",
       description: "Hialuron Pen, skinbooster/swettbotox, máscara LED, Dermalife 5.5.",
-      link: "/services"
+      link: "#services"
     },
     {
       icon: <Leaf className="h-10 w-10" />,
       title: "Programas Especiais",
       description: "Detox, vapor facial, tratamentos para dermatites, bronquite, asma e alergias.",
-      link: "/services"
+      link: "#services"
     }
   ];
 
@@ -49,22 +47,22 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-full"
             >
-              <div className="text-primary mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
-              <p className="text-gray-600 flex-grow mb-4">{service.description}</p>
-              <Link
-                to={service.link}
-                className="text-primary font-medium flex items-center hover:text-blue-700 transition-colors"
+              <div className="text-primary mb-4 flex justify-center">{service.icon}</div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 text-center">{service.title}</h3>
+              <p className="text-gray-600 flex-grow mb-4 text-center">{service.description}</p>
+              <a
+                href={service.link}
+                className="text-primary font-medium flex items-center justify-center hover:text-blue-700 transition-colors"
               >
                 Saiba Mais
                 <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
+              </a>
             </div>
           ))}
         </div>

@@ -15,6 +15,18 @@ const ClinicInfo = () => {
           <p className="text-gray-600 text-lg leading-relaxed">
             Nossa equipe é formada por profissionais especializados e certificados, que seguem protocolos rigorosos e utilizam equipamentos de última geração para garantir segurança e eficácia em todos os tratamentos oferecidos. O compromisso com a excelência e a formação contínua de nossos especialistas reflete-se na qualidade dos resultados e na satisfação de nossos clientes.
           </p>
+          
+          <div className="mt-8">
+            <a 
+              href="https://wa.me/351967319782" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center"
+            >
+              Agende sua Consulta
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
