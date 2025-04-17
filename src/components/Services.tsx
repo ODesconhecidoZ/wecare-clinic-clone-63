@@ -17,12 +17,30 @@ const Services = () => {
       name: "Faciais",
       icon: <Sparkles className="h-6 w-6" />,
       services: [
-        "Hidra-clean",
-        "Peeling ultrassônico",
-        "Alta frequência",
-        "Ozonoterapia",
-        "Hidrapeeling",
-        "Vapor facial"
+        {
+          name: "Hidra-clean",
+          description: "Limpeza profunda da pele que elimina impurezas, desobstrui os poros e hidrata profundamente."
+        },
+        {
+          name: "Peeling ultrassônico",
+          description: "Esfoliação suave que remove células mortas e impurezas usando ondas ultrassônicas, ideal para peles sensíveis."
+        },
+        {
+          name: "Alta frequência",
+          description: "Tratamento que utiliza corrente elétrica de alta frequência para combater acne, inflamações e estimular a circulação."
+        },
+        {
+          name: "Ozonoterapia",
+          description: "Aplicação de ozônio medicinal na pele para eliminar bactérias, melhorar oxigenação e rejuvenescer o tecido cutâneo."
+        },
+        {
+          name: "Hidrapeeling",
+          description: "Combina hidratação profunda com esfoliação suave para renovar a pele, removendo impurezas e células mortas."
+        },
+        {
+          name: "Vapor facial",
+          description: "Aplicação de vapor que abre os poros, facilita a remoção de impurezas e prepara a pele para tratamentos posteriores."
+        }
       ]
     },
     {
@@ -30,12 +48,30 @@ const Services = () => {
       name: "Corporais",
       icon: <Zap className="h-6 w-6" />,
       services: [
-        "HIFU Ultraformer",
-        "Radiofrequência Morpheus",
-        "Sauna finlandesa",
-        "Banho grego",
-        "Massagem vibratória",
-        "Drenagem linfática"
+        {
+          name: "HIFU Ultraformer",
+          description: "Ultrassom focalizado de alta intensidade que estimula o colágeno e promove lifting sem cirurgia."
+        },
+        {
+          name: "Radiofrequência Morpheus",
+          description: "Combinação de radiofrequência e microagulhamento para remodelar o contorno corporal e tratar a flacidez."
+        },
+        {
+          name: "Sauna finlandesa",
+          description: "Sauna seca com temperatura elevada que promove desintoxicação, relaxamento e melhora circulatória."
+        },
+        {
+          name: "Banho grego",
+          description: "Ritual de limpeza e hidratação corporal inspirado na Grécia antiga que deixa a pele macia e revitalizada."
+        },
+        {
+          name: "Massagem vibratória",
+          description: "Técnica que utiliza aparelhos vibratórios para reduzir tensão muscular, melhorar circulação e modelar o corpo."
+        },
+        {
+          name: "Drenagem linfática",
+          description: "Massagem específica que estimula o sistema linfático, reduz edemas e melhora a circulação sanguínea."
+        }
       ]
     },
     {
@@ -43,12 +79,30 @@ const Services = () => {
       name: "Capilares",
       icon: <Droplets className="h-6 w-6" />,
       services: [
-        "Intradermoterapia",
-        "Mesoterapia/nanoterapia",
-        "Derma pen",
-        "Head spa",
-        "Tratamento para queda capilar",
-        "Estímulo ao crescimento"
+        {
+          name: "Intradermoterapia",
+          description: "Aplicação de ativos diretamente no couro cabeludo para tratar a queda de cabelo e estimular o crescimento."
+        },
+        {
+          name: "Mesoterapia/nanoterapia",
+          description: "Microinjeções de nutrientes no couro cabeludo para fortalecer os fios e prevenir a queda."
+        },
+        {
+          name: "Derma pen",
+          description: "Microagulhamento que estimula a produção de colágeno no couro cabeludo e melhora a absorção de ativos."
+        },
+        {
+          name: "Head spa",
+          description: "Tratamento relaxante para o couro cabeludo que combina limpeza profunda, massagem e aplicação de ativos."
+        },
+        {
+          name: "Tratamento para queda capilar",
+          description: "Protocolo personalizado que combina diferentes técnicas para combater a queda de cabelo e fortalecer os fios."
+        },
+        {
+          name: "Estímulo ao crescimento",
+          description: "Tratamento que utiliza ativos e tecnologias avançadas para estimular o crescimento e fortalecer os fios."
+        }
       ]
     },
     {
@@ -56,12 +110,30 @@ const Services = () => {
       name: "Regenerativos",
       icon: <Activity className="h-6 w-6" />,
       services: [
-        "Hialuron Pen",
-        "Skinbooster/Swettbotox",
-        "Máscara LED",
-        "Dermalife 5.5",
-        "Laser facial regenerativo",
-        "Microagulhamento"
+        {
+          name: "Hialuron Pen",
+          description: "Aplicação de ácido hialurônico sem agulhas para hidratação profunda e preenchimento de linhas finas."
+        },
+        {
+          name: "Skinbooster/Swettbotox",
+          description: "Aplicação de substâncias revitalizantes que melhoram a qualidade da pele e reduzem sinais de envelhecimento."
+        },
+        {
+          name: "Máscara LED",
+          description: "Fototerapia com diferentes comprimentos de onda que trata acne, rugas e estimula o colágeno."
+        },
+        {
+          name: "Dermalife 5.5",
+          description: "Tratamento inovador que combina diferentes tecnologias para revitalizar e rejuvenescer a pele."
+        },
+        {
+          name: "Laser facial regenerativo",
+          description: "Estimula a produção de colágeno, melhorando a textura e firmeza da pele de forma não invasiva."
+        },
+        {
+          name: "Microagulhamento",
+          description: "Criação de microcanais na pele que estimulam a regeneração celular e a produção de colágeno."
+        }
       ]
     },
     {
@@ -69,12 +141,30 @@ const Services = () => {
       name: "Especiais",
       icon: <Leaf className="h-6 w-6" />,
       services: [
-        "Detox",
-        "Tratamentos para dermatites",
-        "Tratamentos para bronquite",
-        "Tratamentos para asma",
-        "Tratamentos para alergias",
-        "Programas personalizados"
+        {
+          name: "Detox",
+          description: "Programa completo de desintoxicação do organismo que melhora a saúde geral e reflete na qualidade da pele."
+        },
+        {
+          name: "Tratamentos para dermatites",
+          description: "Protocolos específicos para tratar diferentes tipos de dermatites, reduzindo inflamação e irritação."
+        },
+        {
+          name: "Tratamentos para bronquite",
+          description: "Terapias complementares que ajudam a aliviar sintomas de bronquite e melhorar a saúde respiratória."
+        },
+        {
+          name: "Tratamentos para asma",
+          description: "Abordagem multidisciplinar que visa melhorar a qualidade de vida de pacientes com asma."
+        },
+        {
+          name: "Tratamentos para alergias",
+          description: "Combinação de terapias que ajudam a reduzir reações alérgicas e fortalecer o sistema imunológico."
+        },
+        {
+          name: "Programas personalizados",
+          description: "Protocolos desenvolvidos especificamente para as necessidades individuais de cada cliente."
+        }
       ]
     },
     {
@@ -82,12 +172,30 @@ const Services = () => {
       name: "Estéticos",
       icon: <Scissors className="h-6 w-6" />,
       services: [
-        "Massagens modeladoras",
-        "Tratamentos para celulite",
-        "Tratamentos para flacidez",
-        "Limpeza de pele profunda",
-        "Peeling químico",
-        "Tratamentos anti-idade"
+        {
+          name: "Massagens modeladoras",
+          description: "Técnicas manuais que auxiliam na definição do contorno corporal e redução de medidas."
+        },
+        {
+          name: "Tratamentos para celulite",
+          description: "Combinação de tecnologias e ativos que reduzem o aspecto da celulite e melhoram a textura da pele."
+        },
+        {
+          name: "Tratamentos para flacidez",
+          description: "Protocolos que estimulam o colágeno e a elastina para devolver firmeza à pele."
+        },
+        {
+          name: "Limpeza de pele profunda",
+          description: "Procedimento completo que remove impurezas, cravos e células mortas, deixando a pele limpa e renovada."
+        },
+        {
+          name: "Peeling químico",
+          description: "Aplicação de substâncias que promovem a esfoliação controlada da pele, tratando manchas e rugas."
+        },
+        {
+          name: "Tratamentos anti-idade",
+          description: "Protocolos avançados que combatem os sinais de envelhecimento e promovem o rejuvenescimento da pele."
+        }
       ]
     },
     {
@@ -95,12 +203,30 @@ const Services = () => {
       name: "Diagnósticos",
       icon: <Scan className="h-6 w-6" />,
       services: [
-        "Análise facial",
-        "Diagnóstico capilar",
-        "Avaliação corporal",
-        "Testes de sensibilidade",
-        "Análise de pele",
-        "Consultoria personalizada"
+        {
+          name: "Análise facial",
+          description: "Avaliação detalhada da pele do rosto para identificar necessidades específicas e recomendar tratamentos."
+        },
+        {
+          name: "Diagnóstico capilar",
+          description: "Exame do couro cabeludo e dos fios para identificar problemas e definir o melhor protocolo de tratamento."
+        },
+        {
+          name: "Avaliação corporal",
+          description: "Análise completa do corpo para identificar áreas que necessitam de intervenção estética."
+        },
+        {
+          name: "Testes de sensibilidade",
+          description: "Identificação de possíveis alergias a produtos e substâncias para garantir tratamentos seguros."
+        },
+        {
+          name: "Análise de pele",
+          description: "Estudo aprofundado do tipo de pele e suas condições atuais para direcionar os tratamentos mais adequados."
+        },
+        {
+          name: "Consultoria personalizada",
+          description: "Orientação especializada para criar um programa de cuidados estéticos adaptado às necessidades individuais."
+        }
       ]
     }
   ];
@@ -139,10 +265,11 @@ const Services = () => {
                   <h3 className="text-2xl font-semibold ml-3 text-gray-800">Tratamentos {category.name}</h3>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.services.map((service, idx) => (
-                    <div key={idx} className="bg-gray-50 p-4 rounded-lg hover:bg-primary/5 transition-colors">
-                      <p className="text-center font-medium text-gray-700">{service}</p>
+                    <div key={idx} className="bg-gray-50 p-5 rounded-lg hover:bg-primary/5 transition-colors border border-gray-100">
+                      <h4 className="font-semibold text-lg mb-2 text-primary">{service.name}</h4>
+                      <p className="text-gray-700">{service.description}</p>
                     </div>
                   ))}
                 </div>
