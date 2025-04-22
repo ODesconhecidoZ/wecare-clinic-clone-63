@@ -11,48 +11,48 @@ import {
 
 // Imagens mais representativas dos procedimentos (priorizando fontes confiáveis)
 const serviceImages = {
-  "Hidra-clean": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQHetkeJIJ6-nUCeJiNwIUhIMl0A_LKoNfQ&usqp=CAU",
-  "Peeling ultrassônico": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvWAXVwyg4Ul_4TwywOzR1D6hdMTAsU-DUNg&usqp=CAU",
-  "Alta frequência": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-UyVaJNNC954EaD9DntPzKumGIRAu9S5zA&usqp=CAU",
-  "Ozonoterapia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnL07l0WnogZhup0rHKcYUdqcr-0b2uCsy5w&usqp=CAU",
-  "Hidrapeeling": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMA6Q5UJq78339mumqYCEUqBCd2M5wKZU0Ug&usqp=CAU",
-  "Vapor facial": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOKlnUbntOobOCaQfuSpjxxIvRvacWaaroQ&usqp=CAU",
-  "HIFU Ultraformer": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCw05w-09wdmxWWrfIbXynTK4N1B_KvQYPuw&usqp=CAU",
-  "Radiofrequência Morpheus": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWgvO_Iw7vunpDuD9f2cD_LbAGGuBlh2LeEA&usqp=CAU",
-  "Sauna finlandesa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarQMPkDFlvJ5A3RgsMZXXO8xhvdoNOZGLVw&usqp=CAU",
-  "Banho grego": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9k-4KmHFt_suOHNxNGhoNytQCyxiDe3-Yw&usqp=CAU",
-  "Massagem vibratória": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQ_9nW67iDEaKAZpRrWkROAkT6l4qS_YcSw&usqp=CAU",
-  "Drenagem linfática": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ6RRZWyEvIXcHAMqK_y3IikBLh4cxEwqvA&usqp=CAU",
-  "Intradermoterapia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9BWl1hff5FiGpX3ppKmWgxeN7-jZR_JyEiA&usqp=CAU",
-  "Mesoterapia/nanoterapia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZeVSvLhGth1X2C-aYwvlAKBKQRUPLfF26g&usqp=CAU",
-  "Derma pen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIWz11aF1BtCpWosJZQz-4u7fOEXA5v9_Hg&usqp=CAU",
-  "Head spa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74k5DHsEOk1nOnxdqNAYU0uB8GYww3ZYBhg&usqp=CAU",
-  "Tratamento para queda capilar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz9X8aW1COhqpRNt0tAZA6T_rAiW1bfPLkeA&usqp=CAU",
-  "Estímulo ao crescimento": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXr7EZIibTSy-UHdFwERj-0VkS9zmHliMtcg&usqp=CAU",
-  "Hialuron Pen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Igt6RvLJNQK9VIxWr8FMhITDeLbwelg0ig&usqp=CAU",
-  "Skinbooster/Swettbotox": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanHYmUl3dCwTiLvb4nzwMPhs-2WyKK3gUEw&usqp=CAU",
-  "Máscara LED": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUXeovrZWMNf-Ye73FBDZTLPKbe3Qy-6wIw&usqp=CAU",
-  "Dermalife 5.5": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDqA-nkQ6yO8pv_I4Nj45xhCxBCZ8R4w2Mg&usqp=CAU",
-  "Laser facial regenerativo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgKrHsmG8iZBSeIpCJcLu_P5zJtyCN7xcWhw&usqp=CAU",
-  "Microagulhamento": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi5zJUMd_5CWLeDK_UOH32KJQ8D8TBkZB2fA&usqp=CAU",
-  "Detox": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO3eoVkgrKUhtv3KoDFfQrlFDhdzE4u5r5-A&usqp=CAU",
-  "Tratamentos para dermatites": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fas9jyvJz7vQzuMdFqeGe8IjUlT-EEwGHA&usqp=CAU",
-  "Tratamentos para bronquite": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjfYduafKz293GnYPBiD1OJkWyv4WF5YO_ng&usqp=CAU",
-  "Tratamentos para asma": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkjVGIEjQ0TpqPWJHSB5tVz2f13A-fLThtw&usqp=CAU",
-  "Tratamentos para alergias": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8B_i5XK1XLDXuyedJz8_mLnB2FG_eQegxrA&usqp=CAU",
-  "Programas personalizados": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvefJ4hBcvMhUA7cH6iOGJLB2T0zvNkbCzJg&usqp=CAU",
-  "Massagens modeladoras": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi5uwkufv-5AlMnul8lLdhdrUAMLoZDbOrA&usqp=CAU",
-  "Tratamentos para celulite": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovdjWumLAVbZIm7ATQYKScaM3KAP0811sMA&usqp=CAU",
-  "Tratamentos para flacidez": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJDFEswbzr89r46tPV6OLy2UHTY1t_pLFI9A&usqp=CAU",
-  "Limpeza de pele profunda": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKRVZgIeIioR5hJU5AKpVuwSRuG3LocyGNw&usqp=CAU",
-  "Peeling químico": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxrhuz-Lo0Gs6Powvs4TvOdV_YI64QeyV14w&usqp=CAU",
-  "Tratamentos anti-idade": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5fF2W6xKygy4E9nP9kUz8k2HNtSK78ah1g&usqp=CAU",
-  "Análise facial": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmGy0BMmDVNhnr745eqzMQAv3w63PRPLhOtA&usqp=CAU",
-  "Diagnóstico capilar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahh9OfklWCuKFgBSoWmrkFid5SaPMyYlctg&usqp=CAU",
-  "Avaliação corporal": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1W8UlNg7kdFLq4PfNqVQaMv_lUPsGHrBrg&usqp=CAU",
-  "Testes de sensibilidade": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4I8kD2wX62s82G2yLaMup1YdN-7UO-lUnyQ&usqp=CAU",
-  "Análise de pele": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQtnSKWCVWZpAH5w_uTqVi2Ch7Ifd3WqiMYw&usqp=CAU",
-  "Consultoria personalizada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35WkTGpAIMEixELIC1kQKKicBVRWw9fGRHw&usqp=CAU"
+  "Hidra-clean": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Peeling ultrassônico": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Alta frequência": "https://images.unsplash.com/photo-1598965402089-897ce52e8355?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Ozonoterapia": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Hidrapeeling": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Vapor facial": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "HIFU Ultraformer": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Radiofrequência Morpheus": "https://images.unsplash.com/photo-1581591524083-5ae5b0d95b64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Sauna finlandesa": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Banho grego": "https://images.unsplash.com/photo-1572553687040-79b22e4013e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Massagem vibratória": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Drenagem linfática": "https://images.unsplash.com/photo-1570174006382-115a138243ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Intradermoterapia": "https://images.unsplash.com/photo-1579165466741-7f35e4755183?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Mesoterapia/nanoterapia": "https://images.unsplash.com/photo-1606206873634-443e7a39ff24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Derma pen": "https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Head spa": "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamento para queda capilar": "https://images.unsplash.com/photo-1560983073-c29bfc68fe6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Estímulo ao crescimento": "https://images.unsplash.com/photo-1626954079979-ec490d0cce95?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Hialuron Pen": "https://images.unsplash.com/photo-1598952553841-f9357e5d2de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Skinbooster/Swettbotox": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Máscara LED": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Dermalife 5.5": "https://images.unsplash.com/photo-1612908689375-946bac7aebb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Laser facial regenerativo": "https://images.unsplash.com/photo-1614859076384-14b6c067e60c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Microagulhamento": "https://images.unsplash.com/photo-1636300174712-96e2ba933382?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Detox": "https://images.unsplash.com/photo-1600618528240-fb9fc964eca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para dermatites": "https://images.unsplash.com/photo-1584515942389-dde4d739fb41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para bronquite": "https://images.unsplash.com/photo-1583947581924-860bda6a26df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para asma": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para alergias": "https://images.unsplash.com/photo-1584515979956-d0f650ea561a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Programas personalizados": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Massagens modeladoras": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para celulite": "https://images.unsplash.com/photo-1570194065650-d99fb4a38b97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos para flacidez": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Limpeza de pele profunda": "https://images.unsplash.com/photo-1612908687288-b0334b295e1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Peeling químico": "https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Tratamentos anti-idade": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Análise facial": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Diagnóstico capilar": "https://images.unsplash.com/photo-1580421383874-7e5007c66ca4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Avaliação corporal": "https://images.unsplash.com/photo-1581333100576-b73befd79a72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Testes de sensibilidade": "https://images.unsplash.com/photo-1579165466573-cb89e80ce409?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Análise de pele": "https://images.unsplash.com/photo-1604770101268-e6af07169560?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Consultoria personalizada": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
 };
 
 const Services = () => {
@@ -316,10 +316,14 @@ const Services = () => {
                       {/* Imagem para cada serviço */}
                       <div className="w-full h-40 mb-4 overflow-hidden rounded-md">
                         <img
-                          src={serviceImages[service.name] || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQHetkeJIJ6-nUCeJiNwIUhIMl0A_LKoNfQ&usqp=CAU"}
+                          src={serviceImages[service.name]}
                           alt={`Imagem de ${service.name}`}
                           className="w-full h-full object-cover transition-transform hover:scale-105"
                           loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                            console.log(`Erro ao carregar imagem para: ${service.name}`);
+                          }}
                         />
                       </div>
                       <h4 className="font-semibold text-lg mb-2 text-primary">{service.name}</h4>
