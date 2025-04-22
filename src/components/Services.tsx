@@ -10,8 +10,8 @@ import {
   TabsTrigger
 } from "@/components/ui/tabs";
 
-// Imagens ilustrativas para cada serviço
-const serviceImages: Record<string, string> = {
+// URLs de imagens para cada serviço 
+const serviceImages = {
   "Hidra-clean": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
   "Peeling ultrassônico": "https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80",
   "Alta frequência": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=600&q=80",
@@ -314,12 +314,15 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.services.map((service, idx) => (
                     <div key={idx} className="bg-gray-50 p-5 rounded-lg hover:bg-primary/5 transition-colors border border-gray-100 flex flex-col">
-                      <img
-                        src={serviceImages[service.name] || "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"}
-                        alt={service.name}
-                        className="rounded-md w-full h-40 object-cover mb-4"
-                        loading="lazy"
-                      />
+                      {/* Imagem para cada serviço */}
+                      <div className="w-full h-40 mb-4 overflow-hidden rounded-md">
+                        <img
+                          src={serviceImages[service.name] || "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"}
+                          alt={`Imagem de ${service.name}`}
+                          className="w-full h-full object-cover transition-transform hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
                       <h4 className="font-semibold text-lg mb-2 text-primary">{service.name}</h4>
                       <p className="text-gray-700">{service.description}</p>
                     </div>
@@ -347,4 +350,3 @@ const Services = () => {
 };
 
 export default Services;
-
