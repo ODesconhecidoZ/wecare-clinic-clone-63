@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,7 +83,7 @@
     @apply container mx-auto px-4 md:px-6;
   }
   .btn-primary {
-    @apply bg-primary text-white py-3 px-6 rounded-md hover:bg-blue-600 transition-colors text-lg;
+    @apply bg-purple-600 text-white py-3 px-6 rounded-md hover:bg-purple-700 transition-colors text-lg;
   }
   .section-padding {
     @apply py-16 md:py-24;
@@ -94,5 +93,11 @@
   }
   .section-subtitle {
     @apply text-xl text-gray-600 mb-10 max-w-2xl mx-auto;
+  }
+}
+
+@layer base {
+  ::selection {
+    @apply bg-purple-100 text-purple-800;
   }
 }

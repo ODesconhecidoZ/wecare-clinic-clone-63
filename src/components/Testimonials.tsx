@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -8,7 +7,7 @@ const Testimonials = () => {
       name: "Ana Silva",
       role: "Paciente",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&auto=format&fit=crop&q=80",
-      content: "Tenho sido paciente desta clínica há mais de 5 anos e sempre recebi um cuidado excecional. A equipa é amigável e profissional, e os profissionais dão tempo para ouvir as minhas preocupações. Recomendo vivamente os seus serviços a quem procura cuidados de saúde de qualidade.",
+      content: "Tenho sido paciente desta clínica há mais de 2 anos e sempre recebi um cuidado excecional. A equipa é amigável e profissional, e os profissionais dão tempo para ouvir as minhas preocupações. Recomendo vivamente os seus serviços a quem procura cuidados de saúde de qualidade.",
       rating: 5
     },
     {
@@ -49,11 +48,11 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section-padding bg-primary/5" id="testimonials">
+    <section className="section-padding bg-primary/5 text-gray-800" id="testimonials">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">O Que Os Nossos Pacientes Dizem</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-purple-800">O Que Os Nossos Pacientes Dizem</h2>
+          <p className="section-subtitle text-purple-600">
             Não acredite apenas em nós - ouça o que os nossos pacientes têm a dizer sobre as suas experiências na nossa clínica.
           </p>
         </div>
@@ -64,7 +63,7 @@ const Testimonials = () => {
             {testimonials.slice(0, 3).map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-md flex flex-col"
+                className="bg-white p-8 rounded-xl shadow-md flex flex-col border-2 border-purple-100 hover:border-purple-200 transition-colors"
               >
                 <div className="flex items-center mb-6">
                   <div className="mr-4">
@@ -96,7 +95,7 @@ const Testimonials = () => {
 
           {/* Mobile Testimonials - Single Card with Carousel */}
           <div className="md:hidden">
-            <div className="bg-white p-6 rounded-xl shadow-md">
+            <div className="bg-white p-6 rounded-xl shadow-md border-2 border-purple-100">
               <div className="flex items-center mb-6">
                 <div className="mr-4">
                   <img
@@ -122,15 +121,15 @@ const Testimonials = () => {
               <div className="flex justify-between">
                 <button
                   onClick={prevSlide}
-                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+                  className="p-2 rounded-full bg-purple-50 hover:bg-purple-100 transition-colors"
                 >
-                  <ChevronLeft className="h-5 w-5 text-gray-600" />
+                  <ChevronLeft className="h-5 w-5 text-purple-600" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+                  className="p-2 rounded-full bg-purple-50 hover:bg-purple-100 transition-colors"
                 >
-                  <ChevronRight className="h-5 w-5 text-gray-600" />
+                  <ChevronRight className="h-5 w-5 text-purple-600" />
                 </button>
               </div>
             </div>
