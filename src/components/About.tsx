@@ -1,5 +1,5 @@
 
-import { CheckCircle2, Award, Heart, Users } from "lucide-react";
+import { CheckCircle2, User, Heart } from "lucide-react";
 
 const About = () => {
   return (
@@ -26,8 +26,8 @@ const About = () => {
               <p className="text-xl text-gray-700">Equipamentos de última geração com tecnologia inovadora</p>
             </div>
             <div className="flex items-start justify-center">
-              <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1 mr-4" />
-              <p className="text-xl text-gray-700">Equipa especializada e dedicada a cada cliente</p>
+              <User className="h-8 w-8 text-primary flex-shrink-0 mt-1 mr-4" />
+              <p className="text-xl text-gray-700">Profissional dedicada e especializada em tratamentos personalizados</p>
             </div>
             <div className="flex items-start justify-center">
               <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0 mt-1 mr-4" />
@@ -40,11 +40,18 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="text-center p-8 bg-gray-50 rounded-lg">
             <div className="mb-4 text-primary flex justify-center">
-              <Users className="h-10 w-10" />
+              <User className="h-10 w-10" />
+            </div>
+            <h4 className="text-4xl font-bold text-gray-800 mb-2">1</h4>
+            <p className="text-xl text-gray-600">Profissional</p>
+          </div>
+          
+          <div className="text-center p-8 bg-gray-50 rounded-lg">
+            <div className="mb-4 text-primary flex justify-center">
+              <Heart className="h-10 w-10" />
             </div>
             <h4 className="text-4xl font-bold text-gray-800 mb-2">500+</h4>
             <p className="text-xl text-gray-600">Pacientes Satisfeitos</p>
@@ -52,28 +59,10 @@ const About = () => {
           
           <div className="text-center p-8 bg-gray-50 rounded-lg">
             <div className="mb-4 text-primary flex justify-center">
-              <Award className="h-10 w-10" />
+              <CheckCircle2 className="h-10 w-10" />
             </div>
             <h4 className="text-4xl font-bold text-gray-800 mb-2">4–5</h4>
-            <p className="text-xl text-gray-600">Clientes Atendidos por Dia</p>
-          </div>
-          
-          <div className="text-center p-8 bg-gray-50 rounded-lg">
-            <div className="mb-4 text-primary flex justify-center">
-              <Heart className="h-10 w-10" />
-            </div>
-            <h4 className="text-4xl font-bold text-gray-800 mb-2">Desde 2022</h4>
-            <p className="text-xl text-gray-600">Anos de Atividade</p>
-          </div>
-          
-          <div className="text-center p-8 bg-gray-50 rounded-lg">
-            <div className="mb-4 text-primary flex justify-center">
-              <Award className="h-10 w-10" />
-            </div>
-            <h4 className="text-4xl font-bold text-gray-800 mb-2">10h–18h</h4>
-            <p className="text-xl text-gray-600">Horário Dias Úteis</p>
-            <h4 className="text-4xl font-bold text-gray-800 mt-4 mb-2">10h–13h</h4>
-            <p className="text-xl text-gray-600">Horário Sabados</p>
+            <p className="text-xl text-gray-600">Clientes por Dia</p>
           </div>
         </div>
       </div>
@@ -82,4 +71,3 @@ const About = () => {
 };
 
 export default About;
-

@@ -4,30 +4,9 @@ import { Phone, Mail, ArrowRight } from "lucide-react";
 const Doctors = () => {
   const doctors = [
     {
-      name: "Dr. Sarah Johnson",
-      specialty: "Cardiology",
+      name: "Sofia Costa",
+      specialty: "Estética Avançada e Regenerativa",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&auto=format&fit=crop&q=80",
-      phone: "+351 967 319 782",
-      email: "cc.clinic2025.ear@gmail.com",
-    },
-    {
-      name: "Dr. Michael Chen",
-      specialty: "General Medicine",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&auto=format&fit=crop&q=80",
-      phone: "+351 967 319 782",
-      email: "cc.clinic2025.ear@gmail.com",
-    },
-    {
-      name: "Dr. Emma Williams",
-      specialty: "Pediatrics",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&auto=format&fit=crop&q=80",
-      phone: "+351 967 319 782",
-      email: "cc.clinic2025.ear@gmail.com",
-    },
-    {
-      name: "Dr. James Taylor",
-      specialty: "Neurology",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&auto=format&fit=crop&q=80",
       phone: "+351 967 319 782",
       email: "cc.clinic2025.ear@gmail.com",
     }
@@ -37,13 +16,13 @@ const Doctors = () => {
     <section className="section-padding bg-white" id="doctors">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Nossa Equipe Médica</h2>
+          <h2 className="section-title">Nossa Equipa</h2>
           <p className="section-subtitle">
-            Nossa equipe de profissionais de saúde experientes está dedicada a fornecer o melhor atendimento possível.
+            Comprometidos em fornecer o melhor atendimento personalizado.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 max-w-md mx-auto">
           {doctors.map((doctor, index) => (
             <div
               key={index}
