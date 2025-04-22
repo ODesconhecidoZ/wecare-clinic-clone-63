@@ -9,50 +9,49 @@ import {
   TabsTrigger
 } from "@/components/ui/tabs";
 
-// Imagens mais representativas dos procedimentos (priorizando fontes confiáveis)
 const serviceImages = {
-  "Hidra-clean": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Peeling ultrassônico": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Alta frequência": "https://images.unsplash.com/photo-1598965402089-897ce52e8355?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Ozonoterapia": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Hidrapeeling": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Vapor facial": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "HIFU Ultraformer": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Radiofrequência Morpheus": "https://images.unsplash.com/photo-1581591524083-5ae5b0d95b64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Sauna finlandesa": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Banho grego": "https://images.unsplash.com/photo-1572553687040-79b22e4013e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Massagem vibratória": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Drenagem linfática": "https://images.unsplash.com/photo-1570174006382-115a138243ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Intradermoterapia": "https://images.unsplash.com/photo-1579165466741-7f35e4755183?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Mesoterapia/nanoterapia": "https://images.unsplash.com/photo-1606206873634-443e7a39ff24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Derma pen": "https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Head spa": "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamento para queda capilar": "https://images.unsplash.com/photo-1560983073-c29bfc68fe6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Estímulo ao crescimento": "https://images.unsplash.com/photo-1626954079979-ec490d0cce95?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Hialuron Pen": "https://images.unsplash.com/photo-1598952553841-f9357e5d2de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Skinbooster/Swettbotox": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Máscara LED": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Dermalife 5.5": "https://images.unsplash.com/photo-1612908689375-946bac7aebb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Laser facial regenerativo": "https://images.unsplash.com/photo-1614859076384-14b6c067e60c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Microagulhamento": "https://images.unsplash.com/photo-1636300174712-96e2ba933382?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Detox": "https://images.unsplash.com/photo-1600618528240-fb9fc964eca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para dermatites": "https://images.unsplash.com/photo-1584515942389-dde4d739fb41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para bronquite": "https://images.unsplash.com/photo-1583947581924-860bda6a26df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para asma": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para alergias": "https://images.unsplash.com/photo-1584515979956-d0f650ea561a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Programas personalizados": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Massagens modeladoras": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para celulite": "https://images.unsplash.com/photo-1570194065650-d99fb4a38b97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos para flacidez": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Limpeza de pele profunda": "https://images.unsplash.com/photo-1612908687288-b0334b295e1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Peeling químico": "https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Tratamentos anti-idade": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Análise facial": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Diagnóstico capilar": "https://images.unsplash.com/photo-1580421383874-7e5007c66ca4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Avaliação corporal": "https://images.unsplash.com/photo-1581333100576-b73befd79a72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Testes de sensibilidade": "https://images.unsplash.com/photo-1579165466573-cb89e80ce409?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Análise de pele": "https://images.unsplash.com/photo-1604770101268-e6af07169560?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  "Consultoria personalizada": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  "Hidra-clean": "https://images.pexels.com/photos/3997981/pexels-photo-3997981.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Peeling ultrassônico": "https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Alta frequência": "https://images.pexels.com/photos/3764015/pexels-photo-3764015.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Ozonoterapia": "https://images.pexels.com/photos/3985363/pexels-photo-3985363.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Hidrapeeling": "https://images.pexels.com/photos/3764575/pexels-photo-3764575.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Vapor facial": "https://images.pexels.com/photos/3764579/pexels-photo-3764579.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "HIFU Ultraformer": "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Radiofrequência Morpheus": "https://images.pexels.com/photos/5069437/pexels-photo-5069437.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Sauna finlandesa": "https://images.pexels.com/photos/5069624/pexels-photo-5069624.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Banho grego": "https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Massagem vibratória": "https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Drenagem linfática": "https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Intradermoterapia": "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Mesoterapia/nanoterapia": "https://images.pexels.com/photos/7088474/pexels-photo-7088474.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Derma pen": "https://images.pexels.com/photos/7089397/pexels-photo-7089397.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Head spa": "https://images.pexels.com/photos/3993127/pexels-photo-3993127.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamento para queda capilar": "https://images.pexels.com/photos/3993120/pexels-photo-3993120.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Estímulo ao crescimento": "https://images.pexels.com/photos/7089663/pexels-photo-7089663.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Hialuron Pen": "https://images.pexels.com/photos/7147462/pexels-photo-7147462.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Skinbooster/Swettbotox": "https://images.pexels.com/photos/7147431/pexels-photo-7147431.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Máscara LED": "https://images.pexels.com/photos/7147456/pexels-photo-7147456.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Dermalife 5.5": "https://images.pexels.com/photos/3997382/pexels-photo-3997382.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Laser facial regenerativo": "https://images.pexels.com/photos/5069471/pexels-photo-5069471.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Microagulhamento": "https://images.pexels.com/photos/7147483/pexels-photo-7147483.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Detox": "https://images.pexels.com/photos/3764027/pexels-photo-3764027.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para dermatites": "https://images.pexels.com/photos/7147437/pexels-photo-7147437.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para bronquite": "https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para asma": "https://images.pexels.com/photos/4047137/pexels-photo-4047137.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para alergias": "https://images.pexels.com/photos/4046997/pexels-photo-4046997.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Programas personalizados": "https://images.pexels.com/photos/3764012/pexels-photo-3764012.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Massagens modeladoras": "https://images.pexels.com/photos/3997988/pexels-photo-3997988.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para celulite": "https://images.pexels.com/photos/6663467/pexels-photo-6663467.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos para flacidez": "https://images.pexels.com/photos/6663466/pexels-photo-6663466.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Limpeza de pele profunda": "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Peeling químico": "https://images.pexels.com/photos/5069433/pexels-photo-5069433.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Tratamentos anti-idade": "https://images.pexels.com/photos/5069435/pexels-photo-5069435.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Análise facial": "https://images.pexels.com/photos/3764016/pexels-photo-3764016.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Diagnóstico capilar": "https://images.pexels.com/photos/3993453/pexels-photo-3993453.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Avaliação corporal": "https://images.pexels.com/photos/6551138/pexels-photo-6551138.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Testes de sensibilidade": "https://images.pexels.com/photos/7147414/pexels-photo-7147414.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Análise de pele": "https://images.pexels.com/photos/3764610/pexels-photo-3764610.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Consultoria personalizada": "https://images.pexels.com/photos/7641925/pexels-photo-7641925.jpeg?auto=compress&cs=tinysrgb&w=800"
 };
 
 const Services = () => {
@@ -173,7 +172,7 @@ const Services = () => {
         },
         {
           name: "Laser facial regenerativo",
-          description: "Estimula a produção de colágeno, melhorando a textura e firmeza da pele de forma não invasiva."
+          description: "Estimula a produ��ão de colágeno, melhorando a textura e firmeza da pele de forma não invasiva."
         },
         {
           name: "Microagulhamento",
@@ -313,16 +312,15 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.services.map((service, idx) => (
                     <div key={idx} className="bg-gray-50 p-5 rounded-lg hover:bg-primary/5 transition-colors border border-gray-100 flex flex-col">
-                      {/* Imagem para cada serviço */}
                       <div className="w-full h-40 mb-4 overflow-hidden rounded-md">
                         <img
-                          src={serviceImages[service.name]}
+                          src={serviceImages[service.name] || "https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg?auto=compress&cs=tinysrgb&w=800"}
                           alt={`Imagem de ${service.name}`}
                           className="w-full h-full object-cover transition-transform hover:scale-105"
                           loading="lazy"
                           onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
                             console.log(`Erro ao carregar imagem para: ${service.name}`);
+                            e.currentTarget.src = "https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg?auto=compress&cs=tinysrgb&w=800";
                           }}
                         />
                       </div>
