@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="mb-12">
           <h2 className="text-5xl font-semibold mb-8">Entre em Contacto</h2>
           <p className="text-3xl mb-12 max-w-3xl mx-auto">
-            Tem perguntas ou deseja agendar uma consulta? Entre em contacto por qualquer um dos métodos abaixo.
+            Tem dúvidas ou deseja marcar uma consulta? Entre em contacto connosco através de qualquer um dos métodos abaixo.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ const Contact = () => {
                     <MapPin className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-medium text-gray-800 mb-3">Localização</h4>
+                    <h4 className="text-2xl font-medium text-gray-800 mb-3">Morada</h4>
                     <p className="text-xl text-gray-600">Rua Branco Martins, loja 3</p>
                     <p className="text-xl text-gray-600">2450-106 Nazaré</p>
                     <p className="text-xl text-gray-600">Portugal</p>
@@ -47,7 +47,7 @@ const Contact = () => {
                     <Mail className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-medium text-gray-800 mb-3">Email</h4>
+                    <h4 className="text-2xl font-medium text-gray-800 mb-3">Correio Eletrónico</h4>
                     <a href="mailto:cc.clinic2025.ear@gmail.com" className="text-xl text-gray-700 underline underline-offset-2">cc.clinic2025.ear@gmail.com</a>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                     <h4 className="text-2xl font-medium text-gray-800 mb-3">Horário</h4>
                     <p className="text-xl text-gray-600 mb-1">Segunda a Sexta: 10h - 18h</p>
                     <p className="text-xl text-gray-600 mb-1">Sábado: 10h - 13h</p>
-                    <p className="text-xl text-gray-600">Domingo: Fechado</p>
+                    <p className="text-xl text-gray-600">Domingo: Encerrado</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center text-2xl px-10 py-4"
               >
-                Contactar pelo WhatsApp
+                Contactar via WhatsApp
                 <ArrowRight className="ml-3 h-6 w-6" />
               </a>
             </div>
@@ -85,4 +85,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

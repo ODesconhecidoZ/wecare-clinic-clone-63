@@ -235,9 +235,9 @@ const Services = () => {
     <section className="section-padding bg-gray-50" id="services">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Nossos Serviços</h2>
+          <h2 className="section-title">Os Nossos Serviços</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            Oferecemos uma ampla gama de tratamentos estéticos avançados e regenerativos para atender todas as suas necessidades, categorizados para facilitar a sua escolha.
+            Oferecemos uma vasta gama de tratamentos estéticos avançados e regenerativos para ir ao encontro de todas as suas necessidades, categorizados para facilitar a sua escolha.
           </p>
         </div>
 
@@ -285,7 +285,7 @@ const Services = () => {
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center"
           >
-            Quero agendar pelo WhatsApp
+            Quero marcar pelo WhatsApp
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </div>

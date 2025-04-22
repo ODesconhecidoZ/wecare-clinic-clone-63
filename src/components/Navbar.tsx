@@ -45,7 +45,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Agendar Consulta
+              Marcar Consulta
             </a>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
               className="btn-primary inline-block text-center"
               onClick={() => setIsOpen(false)}
             >
-              Agendar Consulta
+              Marcar Consulta
             </a>
           </div>
         </div>

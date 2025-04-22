@@ -60,7 +60,7 @@ const Doctors = () => {
             rel="noopener noreferrer" 
             className="btn-primary inline-flex items-center"
           >
-            Agendar Consulta
+            Marcar Consulta
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </div>

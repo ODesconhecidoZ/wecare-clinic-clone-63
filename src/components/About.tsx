@@ -6,7 +6,7 @@ const About = () => {
     <section className="section-padding bg-white text-center" id="about">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-semibold mb-6">Sobre a Clínica CC Estética Avançada Regenerativa</h2>
+          <h2 className="text-5xl font-semibold mb-6">Sobre a CC Estética Avançada Regenerativa</h2>
           <p className="text-3xl max-w-4xl mx-auto mb-12">
             Fundada em 2022, a nossa clínica tem vindo a estabelecer-se como referência em tratamentos de estética avançada e regenerativa, proporcionando bem-estar, saúde e realce da beleza natural.
           </p>
@@ -43,7 +43,7 @@ const About = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="text-center p-8 bg-gray-50 rounded-lg">
             <div className="mb-4 text-primary flex justify-center">
-              <User className="h-10 w-10" />
+              <User className="h-10 w-10"  />
             </div>
             <h4 className="text-4xl font-bold text-gray-800 mb-2">1</h4>
             <p className="text-xl text-gray-600">Profissional</p>
@@ -51,7 +51,7 @@ const About = () => {
           
           <div className="text-center p-8 bg-gray-50 rounded-lg">
             <div className="mb-4 text-primary flex justify-center">
-              <Heart className="h-10 w-10" />
+              <Heart className="h-10 w-10"  />
             </div>
             <h4 className="text-4xl font-bold text-gray-800 mb-2">500+</h4>
             <p className="text-xl text-gray-600">Pacientes Satisfeitos</p>
@@ -59,7 +59,7 @@ const About = () => {
           
           <div className="text-center p-8 bg-gray-50 rounded-lg">
             <div className="mb-4 text-primary flex justify-center">
-              <CheckCircle2 className="h-10 w-10" />
+              <CheckCircle2 className="h-10 w-10"  />
             </div>
             <h4 className="text-4xl font-bold text-gray-800 mb-2">4–5</h4>
             <p className="text-xl text-gray-600">Clientes por Dia</p>

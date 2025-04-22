@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
           <div className="flex justify-center gap-6">
             <a href="https://wa.me/351967319782" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center text-2xl px-10 py-4">
-              Agende pelo WhatsApp <ArrowRight className="ml-3 h-6 w-6" />
+              Marcar pelo WhatsApp <ArrowRight className="ml-3 h-6 w-6" />
             </a>
           </div>
         </div>
@@ -45,11 +45,11 @@ const Hero = () => {
             <div>
               <h4 className="text-2xl font-medium mb-2">Contactos</h4>
               <p>Telemóvel/WhatsApp: +351 967 319 782</p>
-              <p>Email: cc.clinic2025.ear@gmail.com</p>
+              <p>E-mail: cc.clinic2025.ear@gmail.com</p>
             </div>
             
             <a href="https://wa.me/351967319782" target="_blank" rel="noopener noreferrer" className="btn-primary w-full flex justify-center items-center text-2xl px-8 py-4 mt-8">
-              Agende pelo WhatsApp <ArrowRight className="ml-3 h-6 w-6" />
+              Marcar pelo WhatsApp <ArrowRight className="ml-3 h-6 w-6" />
             </a>
           </div>
         </div>
@@ -59,4 +59,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

@@ -5,31 +5,31 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Emily Rodriguez",
-      role: "Patient",
+      name: "Ana Silva",
+      role: "Paciente",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&auto=format&fit=crop&q=80",
-      content: "I've been a patient at MediCare Clinic for over 5 years and have always received exceptional care. The staff is friendly and professional, and the doctors take the time to listen to my concerns. I highly recommend their services to anyone looking for quality healthcare.",
+      content: "Tenho sido paciente desta clínica há mais de 5 anos e sempre recebi um cuidado excecional. A equipa é amigável e profissional, e os profissionais dão tempo para ouvir as minhas preocupações. Recomendo vivamente os seus serviços a quem procura cuidados de saúde de qualidade.",
       rating: 5
     },
     {
-      name: "Marcus Johnson",
-      role: "Patient",
+      name: "Pedro Santos",
+      role: "Paciente",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
-      content: "After struggling to find a clinic that could address my chronic condition, I finally found MediCare Clinic. Their team provided a comprehensive treatment plan that has significantly improved my quality of life. I'm grateful for their expertise and compassionate care.",
+      content: "Depois de lutar para encontrar uma clínica que pudesse tratar a minha condição crónica, finalmente encontrei esta clínica. A sua equipa forneceu um plano de tratamento abrangente que melhorou significativamente a minha qualidade de vida. Estou grato pela sua competência e cuidado compassivo.",
       rating: 5
     },
     {
-      name: "Sophia Chang",
-      role: "Parent",
+      name: "Mariana Costa",
+      role: "Paciente",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80",
-      content: "As a parent, I trust MediCare Clinic with my children's health. The pediatric department is amazing - they make my kids feel comfortable during visits and provide clear explanations of treatments. The convenient online appointment booking system has been a lifesaver for our busy schedule.",
+      content: "Enquanto paciente, confio nesta clínica com a saúde dos meus filhos. O departamento de pediatria é incrível - fazem com que as crianças se sintam confortáveis durante as consultas e fornecem explicações claras sobre os tratamentos. O sistema de marcação de consultas online tem sido uma verdadeira salvação para o nosso horário ocupado.",
       rating: 5
     },
     {
-      name: "Robert Wilson",
-      role: "Patient",
+      name: "Ricardo Oliveira",
+      role: "Paciente",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80",
-      content: "The preventive care program at MediCare Clinic has been instrumental in helping me maintain my health. The doctors are thorough and take a proactive approach to healthcare. The staff is always helpful with insurance questions and scheduling.",
+      content: "O programa de cuidados preventivos desta clínica tem sido fundamental para me ajudar a manter a minha saúde. Os médicos são minuciosos e adotam uma abordagem proactiva aos cuidados de saúde. A equipa está sempre disponível para ajudar em questões de seguro e marcações.",
       rating: 4
     }
   ];
@@ -52,9 +52,9 @@ const Testimonials = () => {
     <section className="section-padding bg-primary/5" id="testimonials">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">What Our Patients Say</h2>
+          <h2 className="section-title">O Que Os Nossos Pacientes Dizem</h2>
           <p className="section-subtitle">
-            Don't just take our word for it - hear what our patients have to say about their experiences at MediCare Clinic.
+            Não acredite apenas em nós - ouça o que os nossos pacientes têm a dizer sobre as suas experiências na nossa clínica.
           </p>
         </div>
 

@@ -10,12 +10,12 @@ const FAQ = () => {
       answer: "45 a 90 minutos, conforme o protocolo."
     },
     {
-      question: "Preciso trazer alguma coisa?",
+      question: "Preciso de levar alguma coisa?",
       answer: "Documentos pessoais e lista de medicamentos que esteja a tomar."
     },
     {
       question: "Quantas sessões são recomendadas?",
-      answer: "Normalmente de 4 a 8, varia conforme cada caso específico."
+      answer: "Normalmente 4 a 8, varia consoante cada caso específico."
     },
     {
       question: "Existem contraindicações?",
