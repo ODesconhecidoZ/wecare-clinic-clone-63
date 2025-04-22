@@ -1,14 +1,60 @@
 
-import { 
+import {
   Sparkles, Zap, Droplets, Activity, Leaf, ArrowRight,
-  Scan, Brain, PenLine, Scissors, Flame
+  Scan, Scissors
 } from "lucide-react";
-import { 
-  Tabs, 
-  TabsContent, 
-  TabsList, 
-  TabsTrigger 
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger
 } from "@/components/ui/tabs";
+
+// Imagens ilustrativas para cada serviço
+const serviceImages: Record<string, string> = {
+  "Hidra-clean": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+  "Peeling ultrassônico": "https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80",
+  "Alta frequência": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=600&q=80",
+  "Ozonoterapia": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
+  "Hidrapeeling": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80",
+  "Vapor facial": "https://images.unsplash.com/photo-1521939094609-93aba1af40d6?auto=format&fit=crop&w=600&q=80",
+  "HIFU Ultraformer": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+  "Radiofrequência Morpheus": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+  "Sauna finlandesa": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+  "Banho grego": "https://images.unsplash.com/photo-1556229010-aa3bdf1b4397?auto=format&fit=crop&w=600&q=80",
+  "Massagem vibratória": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80",
+  "Drenagem linfática": "https://images.unsplash.com/photo-1512428559087-dc1c88b942c2?auto=format&fit=crop&w=600&q=80",
+  "Intradermoterapia": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80",
+  "Mesoterapia/nanoterapia": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=600&q=80",
+  "Derma pen": "https://images.unsplash.com/photo-1522335789203-a258e60b7665?auto=format&fit=crop&w=600&q=80",
+  "Head spa": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
+  "Tratamento para queda capilar": "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80",
+  "Estímulo ao crescimento": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+  "Hialuron Pen": "https://images.unsplash.com/photo-1506629082955-511b1ccebccb?auto=format&fit=crop&w=600&q=80",
+  "Skinbooster/Swettbotox": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=600&q=80",
+  "Máscara LED": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+  "Dermalife 5.5": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=600&q=80",
+  "Laser facial regenerativo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+  "Microagulhamento": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+  "Detox": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para dermatites": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para bronquite": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para asma": "https://images.unsplash.com/photo-1512428559087-dc1c88b942c2?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para alergias": "https://images.unsplash.com/photo-1522335789203-a258e60b7665?auto=format&fit=crop&w=600&q=80",
+  "Programas personalizados": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+  "Massagens modeladoras": "https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para celulite": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos para flacidez": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80",
+  "Limpeza de pele profunda": "https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80",
+  "Peeling químico": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=600&q=80",
+  "Tratamentos anti-idade": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=600&q=80",
+  "Análise facial": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=600&q=80",
+  "Diagnóstico capilar": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80",
+  "Avaliação corporal": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+  "Testes de sensibilidade": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+  "Análise de pele": "https://images.unsplash.com/photo-1522335789203-a258e60b7665?auto=format&fit=crop&w=600&q=80",
+  "Consultoria personalizada": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+};
 
 const Services = () => {
   const serviceCategories = [
@@ -244,8 +290,8 @@ const Services = () => {
         <Tabs defaultValue="facial" className="max-w-5xl mx-auto">
           <TabsList className="flex flex-wrap justify-center mb-8 bg-transparent h-auto gap-2">
             {serviceCategories.map((category) => (
-              <TabsTrigger 
-                key={category.id} 
+              <TabsTrigger
+                key={category.id}
                 value={category.id}
                 className="flex items-center gap-2 px-4 py-3 rounded-full data-[state=active]:bg-primary data-[state=active]:text-white"
               >
@@ -254,7 +300,7 @@ const Services = () => {
               </TabsTrigger>
             ))}
           </TabsList>
-          
+
           {serviceCategories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="animate-in fade-in-50 duration-300">
               <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -264,10 +310,16 @@ const Services = () => {
                   </div>
                   <h3 className="text-2xl font-semibold ml-3 text-gray-800">Tratamentos {category.name}</h3>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.services.map((service, idx) => (
-                    <div key={idx} className="bg-gray-50 p-5 rounded-lg hover:bg-primary/5 transition-colors border border-gray-100">
+                    <div key={idx} className="bg-gray-50 p-5 rounded-lg hover:bg-primary/5 transition-colors border border-gray-100 flex flex-col">
+                      <img
+                        src={serviceImages[service.name] || "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"}
+                        alt={service.name}
+                        className="rounded-md w-full h-40 object-cover mb-4"
+                        loading="lazy"
+                      />
                       <h4 className="font-semibold text-lg mb-2 text-primary">{service.name}</h4>
                       <p className="text-gray-700">{service.description}</p>
                     </div>
@@ -279,9 +331,9 @@ const Services = () => {
         </Tabs>
 
         <div className="text-center mt-12">
-          <a 
-            href="https://wa.me/351967319782" 
-            target="_blank" 
+          <a
+            href="https://wa.me/351967319782"
+            target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center"
           >
@@ -295,3 +347,4 @@ const Services = () => {
 };
 
 export default Services;
+
