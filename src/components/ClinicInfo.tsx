@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const ClinicInfo = () => {
@@ -15,7 +14,7 @@ const ClinicInfo = () => {
           <h3 className="text-3xl font-semibold text-gray-800 mb-8">Equipa e Credenciais</h3>
           
           <p className="text-2xl leading-relaxed text-gray-600 mb-10">
-            A nossa equipa é composta por profissionais especializados e certificados. Seguindo protocolos rigorosos e utilizando tecnologia avançada, asseguramos segurança e eficácia em todos os nossos tratamentos. A satisfação dos nossos mais de 500 pacientes reflete o nosso compromisso com a qualidade e excelência.
+            A nossa equipa, composta por uma profissional especializada e certificada, segue protocolos rigorosos e utiliza tecnologia avançada. Com um atendimento personalizado e dedicado, garantimos a segurança e eficácia de cada tratamento. A satisfação de mais de 500 pacientes comprova o nosso compromisso com a qualidade e excelência em estética avançada e regenerativa.
           </p>
           
           <div className="mt-12">
@@ -36,4 +35,3 @@ const ClinicInfo = () => {
 };
 
 export default ClinicInfo;
-
