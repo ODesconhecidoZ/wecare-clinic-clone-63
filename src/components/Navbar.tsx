@@ -29,7 +29,9 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/f55d32e8-1cb9-48ca-ae85-a8a2f3561d7a.png" 
             alt="CC Estética Avançada Regenerativa" 
-            className="h-20 object-contain"
+            className="h-20 object-contain max-w-full"
+            width="auto"
+            height="auto"
           />
         </Link>
 
