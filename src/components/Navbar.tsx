@@ -27,9 +27,11 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <div className="text-primary font-bold text-2xl font-poppins">
-            CC Estética<span className="text-gray-700"> Avançada Regenerativa</span>
-          </div>
+          <img 
+            src="/lovable-uploads/f55d32e8-1cb9-48ca-ae85-a8a2f3561d7a.png" 
+            alt="CC Estética Avançada Regenerativa" 
+            className="h-12 object-contain"
+          />
         </Link>
 
         {/* Desktop Menu */}
