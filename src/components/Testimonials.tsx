@@ -1,35 +1,36 @@
+
 import { useState } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Ana Silva",
+      name: "Sofia Martins",
       role: "Paciente",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&auto=format&fit=crop&q=80",
-      content: "Tenho sido paciente desta clínica há mais de 2 anos e sempre recebi um cuidado excecional. A equipa é amigável e profissional, e os profissionais dão tempo para ouvir as minhas preocupações. Recomendo vivamente os seus serviços a quem procura cuidados de saúde de qualidade.",
+      content: "Realizei o tratamento HIFU Ultraformer e os resultados foram surpreendentes! A flacidez do meu rosto melhorou significativamente e a equipa foi extremamente profissional durante todo o processo. Recomendo vivamente este tratamento para quem procura resultados naturais sem cirurgia.",
       rating: 5
     },
     {
-      name: "Pedro Santos",
+      name: "Carlos Rodrigues",
       role: "Paciente",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
-      content: "Depois de lutar para encontrar uma clínica que pudesse tratar a minha condição crónica, finalmente encontrei esta clínica. A sua equipa forneceu um plano de tratamento abrangente que melhorou significativamente a minha qualidade de vida. Estou grato pela sua competência e cuidado compassivo.",
+      content: "Comecei os tratamentos capilares há 6 meses e já noto uma diferença incrível. A combinação de mesoterapia e microagulhamento realmente funcionou para mim. Os profissionais são muito atenciosos e sempre explicam cada etapa do processo.",
       rating: 5
     },
     {
-      name: "Mariana Costa",
+      name: "Isabel Costa",
       role: "Paciente",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80",
-      content: "Enquanto paciente, confio nesta clínica com a saúde dos meus filhos. O departamento de pediatria é incrível - fazem com que as crianças se sintam confortáveis durante as consultas e fornecem explicações claras sobre os tratamentos. O sistema de marcação de consultas online tem sido uma verdadeira salvação para o nosso horário ocupado.",
+      content: "A limpeza de pele profunda com peeling ultrassônico transformou completamente a minha pele. As manchas diminuíram e a textura melhorou muito. O ambiente da clínica é muito acolhedor e a equipe é extremamente competente.",
       rating: 5
     },
     {
-      name: "Ricardo Oliveira",
+      name: "Miguel Santos",
       role: "Paciente",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80",
-      content: "O programa de cuidados preventivos desta clínica tem sido fundamental para me ajudar a manter a minha saúde. Os médicos são minuciosos e adotam uma abordagem proactiva aos cuidados de saúde. A equipa está sempre disponível para ajudar em questões de seguro e marcações.",
-      rating: 4
+      content: "Os tratamentos estéticos corporais, especialmente a Radiofrequência Morpheus, superaram minhas expectativas. Os resultados na flacidez e contorno corporal são visíveis desde as primeiras sessões. Equipe muito profissional e dedicada.",
+      rating: 5
     }
   ];
 
@@ -141,3 +142,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
